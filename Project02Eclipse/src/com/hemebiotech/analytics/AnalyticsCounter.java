@@ -2,22 +2,26 @@ package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.FileWriter;
 
-public class AnalyticsCounter implements ObjAnalyser<string,interger> {
-	// private static int headacheCount = 0;	// initialize to 0
-	// private static int rashCount = 0;		// initialize to 0
-	// private static int pupilCount = 0;		// initialize to 0
-		private static 
+
+public class AnalyticsCounter {
 	
 	public static void main(String args[]) throws Exception {
-		/* first get input
+		//first get input
 		BufferedReader reader = new BufferedReader (new FileReader("/Users/guillaumebrenot/Git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt"));
-		String line = reader.readLine(); */
-
-		ObjAnalyser Analyse = new ObjAnalyser (new ReadSymptomDataFromFile());
-		ObjAnalyser.ISymptomReader();
-
+		String line = reader.readLine();
+		
+		while (line != null) {
+			System.out.println("Symptoms " + line);
+			line = reader.readLine();
+		}
+		
+		//String nameFile = "/Users/guillaumebrenot/Git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt";
+		//String contentFile = ReadSymptomDataFromFile(nameFile);
+		//ObjAnalyser Analyse = new ObjAnalyser (new ReadSymptomDataFromFile(nameFile));
+	
+		
+		
 		/* int i = 0;	// set i to 0
 		int headCount = i;	// counts headaches
 		while (line != null) {
@@ -44,7 +48,6 @@ public class AnalyticsCounter implements ObjAnalyser<string,interger> {
 		writer.write("rash: " + rashCount + "\n");
 		writer.write("dialated pupils: " + pupilCount + "\n");
 		writer.close(); */
-		
-		
 	}
+
 }
