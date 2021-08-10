@@ -1,6 +1,6 @@
 package com.hemebiotech.analytics;
 
-import java.util.List;
+import java.util.ArrayList;
 
 
 
@@ -11,7 +11,7 @@ import java.util.List;
 		public Object ISymptomsReader;
 
 		
-		public static void GetSymptoms(List<String> ObjList) {
+		public static void GetSymptoms(ArrayList<String> ObjList) {
 			ObjAnalyser.GetSymptoms(ObjList);
 			
 		}

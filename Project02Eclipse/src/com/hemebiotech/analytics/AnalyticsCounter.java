@@ -2,7 +2,7 @@ package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-
+import java.util.HashMap;
 
 public class AnalyticsCounter {
 	
@@ -10,10 +10,13 @@ public class AnalyticsCounter {
 		//first get input
 		BufferedReader reader = new BufferedReader (new FileReader("/Users/guillaumebrenot/Git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt"));
 		String line = reader.readLine();
+		HashMap<String, Integer> symptoms = new HashMap<String, Integer>();
 		
-		while (line != null) {
-			System.out.println("Symptoms " + line);
+		for (int i = 0;line!=null;i++) {
 			line = reader.readLine();
+			symptoms.put(line, i);
+			System.out.println("ligne : " + i);
+			System.out.println("Symptoms : " + line);
 		}
 		
 		//String nameFile = "/Users/guillaumebrenot/Git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt";
