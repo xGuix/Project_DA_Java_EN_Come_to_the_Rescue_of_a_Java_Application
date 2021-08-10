@@ -18,3 +18,4 @@ public interface ISymptomReader {
 	 */
 	List<String> GetSymptoms();
 }
+ 
