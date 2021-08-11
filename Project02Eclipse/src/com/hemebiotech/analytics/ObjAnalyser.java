@@ -1,5 +1,7 @@
 package com.hemebiotech.analytics;
 
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ObjAnalyser extends AnalyticsCounter {
 		
@@ -11,15 +13,18 @@ public class ObjAnalyser extends AnalyticsCounter {
 		public String CountSymptoms;
 		public String WriteSymptoms;
 		
-		
-		
-		public void ISymptomReader() {
-			String symptomName;
-			Integer totalOfSymptoms;
-			
-			
-			;
+	
+
+		public ObjAnalyser(ReadSymptomDataFromFile readSymptomDataFromFile) throws IOException {
+			String analyser = new String();
+			return;
 		}
+
+		public String ISymptomReader() {
+			String symptomName = null;
+			return symptomName;
+		}
+
 		
 		public void ISymptomsCounter() {
 
@@ -28,6 +33,11 @@ public class ObjAnalyser extends AnalyticsCounter {
 		public void ISymptomsWriter() {
 			
 			
+		}
+
+		public String GetSymptoms() {
+			// TODO Auto-generated method stub
+			return null;
 		}
 			
 }

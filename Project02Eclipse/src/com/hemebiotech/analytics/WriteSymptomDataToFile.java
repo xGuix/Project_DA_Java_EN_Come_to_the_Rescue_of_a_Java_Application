@@ -23,6 +23,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
        	
        	if (lineMap==null) {
        		writer.close();
+       		return;
        	}
 	}
 }
