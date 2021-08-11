@@ -8,8 +8,12 @@ public class AnalyticsCounter {
 	
 	public static void main(String args[]) throws Exception {
 		//first get input
-		ObjAnalyser analyse = new ObjAnalyser(new ReadSymptomDataFromFile(reader));
-		GetSymptoms 
+		ObjAnalyser analyser = new ObjAnalyser();
+		BufferedReader read = new BufferedReader (new FileReader("/Users/guillaumebrenot/Git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt"));
+		String count = read.readLine();
+		
+		System.out.println("Symptoms : " + count);
+		count = read.readLine();
 		
 	}
 }
