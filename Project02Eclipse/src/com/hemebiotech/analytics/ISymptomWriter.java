@@ -1,9 +1,10 @@
 package com.hemebiotech.analytics;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public interface ISymptomWriter {
+	Map<String,String> WriteSymptoms = new HashMap<String,String>();
 	
-	ArrayList<String> WriteSymptoms ();
 }

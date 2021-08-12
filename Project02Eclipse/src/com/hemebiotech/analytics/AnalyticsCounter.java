@@ -10,11 +10,10 @@ public class AnalyticsCounter {
 		//System.out.println("Symptoms : " + count);
 		//count = read.readLine();
 		
-		ObjAnalyser ObjAnalyser = new ObjAnalyser (new ReadSymptomDataFromFile("/Users/guillaumebrenot/Git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt"));
-		ObjAnalyser.GetSymptoms();
+		ObjAnalyser ObjAnalyser = new ObjAnalyser ();
 		String analyser = ObjAnalyser.GetSymptoms();
 		analyser = ObjAnalyser.ISymptomReader();
-		System.out.println("Symptoms : " + analyser);
+		System.out.println("TEST RETOUR : " + ObjAnalyser);
 	}
 }
 			
