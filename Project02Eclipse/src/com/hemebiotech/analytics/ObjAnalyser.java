@@ -1,23 +1,30 @@
 package com.hemebiotech.analytics;
 
-import java.util.ArrayList;
 
-public class ObjAnalyser implements ISymptomReader {
+public class ObjAnalyser extends ReadSymptomDataFromFile {
 		
-		String symptomName;
-		Integer totalOfSymptoms;
-		Integer NumberOfEach;
+	private static String filepath;
+	String symptomName;
+	Integer totalOfSymptoms;
+	Integer NumberOfEach;
 
-		public String listOfSymptoms() {
-			this.symptomName= "TestValeurDeRetour";
-			
-			return symptomName;
+	
+		public ObjAnalyser() {
+		super(filepath);
+		ObjAnalyser StringAnalyser = new ObjAnalyser();
+		ReadSymptomDataFromFile ReadSymptoms = new ReadSymptomDataFromFile(filepath);
+		StringAnalyser.GetSymptoms();
+		ReadSymptoms.GetSymptoms();
+	}
+		
+		public String listOfSymptoms(ReadSymptomDataFromFile readSymptomDataFromFile) {
+			this.symptomName= filepath;
+			 return listOfSymptoms(ReadSymtoms(symptomName));
 		}
 
-		@Override
-		public ArrayList<String> GetSymptoms() {
-			// TODO Auto-generated method stub
-			return null;
+		public ReadSymptomDataFromFile ReadSymtoms(String symptomName) {
+			this.symptomName= symptomName;
+			return ReadSymtoms(symptomName);
 		}
 
 }

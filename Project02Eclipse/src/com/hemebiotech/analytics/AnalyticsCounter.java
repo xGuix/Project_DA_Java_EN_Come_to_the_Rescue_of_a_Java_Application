@@ -1,5 +1,7 @@
 package com.hemebiotech.analytics;
 
+import java.util.ArrayList;
+
 public class AnalyticsCounter {
 
 	public static void main(String args[]) throws Exception {
@@ -8,12 +10,15 @@ public class AnalyticsCounter {
 		//String count = read.readLine();
 		//System.out.println("Symptoms : " + count);
 		//count = read.readLine();
-		
+				
 		ObjAnalyser MonAnalyser = new ObjAnalyser();
-			MonAnalyser.listOfSymptoms();
-			System.out.println("TEST RETOUR : " + MonAnalyser.symptomName);
-			System.out.println("TEST2 RETOUR : " + MonAnalyser.listOfSymptoms());
-		}
+		MonAnalyser.listOfSymptoms(MonAnalyser);
+		
+		System.out.println("TEST symptomName : " + MonAnalyser.symptomName);
+		System.out.println("TEST GetSymptoms : " + MonAnalyser.GetSymptoms());
+		
+		System.out.println("TEST MonAnalyser : " + MonAnalyser);
+	}
 }
 			
 			
