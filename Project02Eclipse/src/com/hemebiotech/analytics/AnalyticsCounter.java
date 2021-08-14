@@ -1,6 +1,5 @@
 package com.hemebiotech.analytics;
 
-import java.util.ArrayList;
 
 public class AnalyticsCounter {
 
@@ -12,11 +11,12 @@ public class AnalyticsCounter {
 		//count = read.readLine();
 				
 		ObjAnalyser MonAnalyser = new ObjAnalyser();
-		MonAnalyser.listOfSymptoms(MonAnalyser);
+		MonAnalyser.listOfSymptoms();
+		MonAnalyser.ReadSymptoms();
 		
 		System.out.println("TEST symptomName : " + MonAnalyser.symptomName);
-		System.out.println("TEST GetSymptoms : " + MonAnalyser.GetSymptoms());
-		
+		System.out.println("TEST ReadSymptoms : " + MonAnalyser.ReadSymptoms);
+		System.out.println("TEST ListOfSymptoms : " + MonAnalyser.listOfSymptoms());
 		System.out.println("TEST MonAnalyser : " + MonAnalyser);
 	}
 }

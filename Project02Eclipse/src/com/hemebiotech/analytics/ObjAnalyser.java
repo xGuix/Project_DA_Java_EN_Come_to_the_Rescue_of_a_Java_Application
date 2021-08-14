@@ -1,7 +1,7 @@
 package com.hemebiotech.analytics;
 
 
-public class ObjAnalyser extends ReadSymptomDataFromFile {
+public class ObjAnalyser {
 		
 	private static String filepath;
 	String symptomName;
@@ -9,22 +9,17 @@ public class ObjAnalyser extends ReadSymptomDataFromFile {
 	Integer NumberOfEach;
 
 	
-		public ObjAnalyser() {
-		super(filepath);
-		ObjAnalyser StringAnalyser = new ObjAnalyser();
-		ReadSymptomDataFromFile ReadSymptoms = new ReadSymptomDataFromFile(filepath);
-		StringAnalyser.GetSymptoms();
-		ReadSymptoms.GetSymptoms();
-	}
+		ReadSymptomDataFromFile ReadSymptoms = new ReadSymptomDataFromFile("symptoms.txts");
 		
-		public String listOfSymptoms(ReadSymptomDataFromFile readSymptomDataFromFile) {
+		
+		public String listOfSymptoms() {
 			this.symptomName= filepath;
-			 return listOfSymptoms(ReadSymtoms(symptomName));
+			 return symptomName;
 		}
 
-		public ReadSymptomDataFromFile ReadSymtoms(String symptomName) {
-			this.symptomName= symptomName;
-			return ReadSymtoms(symptomName);
+		public ReadSymptomDataFromFile ReadSymptoms() {
+			ReadSymptoms.GetSymptoms();
+			return ReadSymptoms;
 		}
 
 }
