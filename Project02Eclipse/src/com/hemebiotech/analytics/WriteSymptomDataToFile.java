@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
 	Map<Integer, String> symptoms = new HashMap<Integer, String>();
@@ -19,7 +20,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 		String lineMap = entry.getValue();
 
 		System.out.println(iMap + " - " + lineMap);
-		writer.write("Line NÂ°" + iMap + " - Symptom : " + lineMap);
+		writer.write("Line N°" + iMap + " - Symptom : " + lineMap);
 		writer.write(System.lineSeparator());
 
 		if (lineMap == null) {
@@ -27,5 +28,4 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 			return;
 		}
 	}
-}
-}
+}}

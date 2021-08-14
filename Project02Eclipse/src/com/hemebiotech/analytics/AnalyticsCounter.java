@@ -12,7 +12,7 @@ public class AnalyticsCounter {
 
 		ObjAnalyser MonAnalyser = new ObjAnalyser();
 		MonAnalyser.listOfSymptoms();
-		MonAnalyser.ReadSymptoms();
+
 
 		System.out.println("TEST symptomName : " + MonAnalyser.symptomName);
 		System.out.println("TEST ReadSymptoms : " + MonAnalyser.ReadSymptoms);
