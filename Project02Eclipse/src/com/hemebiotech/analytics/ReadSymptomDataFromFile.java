@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Simple brute force implementation
@@ -22,7 +23,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		this.filepath = filepath;
 	}
 
-	public ArrayList<String> GetSymptoms() {
+	public List<String> GetSymptoms() {
 		ArrayList<String> result = new ArrayList<String>();
 
 		if (filepath != null) {
