@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class ObjAnalyser extends AnalyticsCounter {
 
 	//J'ai besoin d'une façon de lire
-	private ISymptomReader symptomsRead;
+	private ISymptomReader symptomsReader;
 	//J'ai besoin d'une façon d'écrire le résultat
 	private ISymptomWriter symptomsWriter;
 	//J'ai besoin d'une façon de compter et trier
@@ -17,15 +17,15 @@ public class ObjAnalyser extends AnalyticsCounter {
 	
 	//Mon constructeur me permet de construire un objet 
 	//ObjAnalyser avec les caractéristiques que je lui donne
-	public ObjAnalyser(ISymptomReader symptomsRead, ISymptomCounter symptomsCounter, ISymptomWriter symptomsWriter) {
-		this.symptomsRead = symptomsRead;
+	public ObjAnalyser(ISymptomReader symptomsReader, ISymptomCounter symptomsCounter, ISymptomWriter symptomsWriter) {
+		this.symptomsReader = symptomsReader;
 		this.symptomsCounter = symptomsCounter;
 		this.symptomsWriter = symptomsWriter;
 	}
 	
 	public ISymptomReader symptomsReader() {
-		this.symptomsRead = symptomsReader();
-		return symptomsRead;
+		this.symptomsReader = symptomsReader();
+		return symptomsReader;
 	}
 	
 	public ISymptomCounter symptomsCounter() {

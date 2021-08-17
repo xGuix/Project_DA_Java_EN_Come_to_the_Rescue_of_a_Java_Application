@@ -12,7 +12,7 @@ public class AnalyticsCounter {
 
 		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
 			null, new WriteSymptomDataToFile(outputFile));
-			inputFile = MonAnalyser.symptomsReader();
+			MonAnalyser.symptomsReader();
 		    MonAnalyser.symptomsCounter();
 			MonAnalyser.symptomsWriter(); 
 			
