@@ -4,17 +4,18 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
-public class CountSymptomDataFromFile implements ISymptomCounter {
+public abstract class CountSymptomDataFromFile implements ISymptomCounter {
 
 	private String filepath;
-
 	public CountSymptomDataFromFile(String filepath) {
 		this.filepath = filepath;
 	}
 
-	public ArrayList<String> CountSymptoms() {
-		ArrayList<String> Counter = new ArrayList<String>();
+	
+	public List<String> CountSymptoms() {
+		List<String> Counter = new ArrayList<String>();
 
 		if (filepath != null) {
 			try {

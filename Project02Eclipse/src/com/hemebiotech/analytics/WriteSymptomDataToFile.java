@@ -2,25 +2,22 @@ package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
+import java.util.TreeMap;
 
-public class WriteSymptomDataToFile implements ISymptomWriter {
 
-	Map<Integer, String> SymptomsListCounter = new HashMap<Integer, String>();
+public abstract class WriteSymptomDataToFile implements ISymptomWriter {
 	
-	public WriteSymptomDataToFile() throws IOException {
+	public WriteSymptomDataToFile(String filepath) throws IOException {
+		
 		FileWriter writer = new FileWriter ("result.out");
-		for(
-				Iterator<Entry<Integer, String>> iterator = SymptomsListCounter.entrySet().iterator();iterator.hasNext();)
-				{
-					Entry<Integer, String> entry = iterator.next();
-					int iMap = entry.getKey();
-					String lineMap = entry.getValue();
+		Map<String,Integer> SymptomsCounted = new TreeMap<String,Integer>();
+		
+		for(Map.Entry<String, Integer> entry : SymptomsCounted.entrySet()){
+					String lineMap = entry.getKey();
+					Integer iMap = entry.getValue();
 
-					System.out.println(iMap + " - " + lineMap);
+					System.out.println(iMap + " / " + lineMap);
 					writer.write("Line N°" + iMap + " - Symptom : " + lineMap);
 					writer.write(System.lineSeparator());
 
@@ -29,5 +26,5 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 						return;
 					}
 				}
-	} 	
+	}
 }

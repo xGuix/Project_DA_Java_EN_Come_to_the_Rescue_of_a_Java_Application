@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface ISymptomCounter {
 
-	List<String> SymptomsListMaker();
+	List<String> symptomsCounter();
 }
