@@ -1,5 +1,8 @@
 package com.hemebiotech.analytics;
 
+import java.util.List;
+import java.util.TreeMap;
+
 public class ObjAnalyser extends AnalyticsCounter {
 
 	//J'ai besoin d'une façon de lire
@@ -9,7 +12,9 @@ public class ObjAnalyser extends AnalyticsCounter {
 	//J'ai besoin d'une façon de compter et trier
 	private ISymptomCounter symptomsCounter;
 
-		
+	private List<String> listSymptoms;
+	private TreeMap<String, Integer> listsymptomsWriter;
+	
 	//Mon constructeur me permet de construire un objet 
 	//ObjAnalyser avec les caractéristiques que je lui donne
 	public ObjAnalyser(ISymptomReader symptomsRead, ISymptomCounter symptomsCounter, ISymptomWriter symptomsWriter) {
@@ -17,13 +22,6 @@ public class ObjAnalyser extends AnalyticsCounter {
 		this.symptomsCounter = symptomsCounter;
 		this.symptomsWriter = symptomsWriter;
 	}
-
-/*	public ObjAnalyser(ReadSymptomDataFromFile readSymptomDataFromFile, WriteSymptomDataToFile writeSymptomDataToFile) {
-		this.symptomsReader();
-		this.symptomsCounter();
-		this.symptomsWriter();
-	}
-*/
 	
 	public ISymptomReader symptomsReader() {
 		this.symptomsRead = symptomsReader();

@@ -10,8 +10,9 @@ public class AnalyticsCounter {
 		final String inputFile = "symptoms.txt";
 		final String outputFile = "result.out";
 
-		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile), null, new WriteSymptomDataToFile(outputFile));
-			MonAnalyser.symptomsReader();
+		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
+			null, new WriteSymptomDataToFile(outputFile));
+			inputFile = MonAnalyser.symptomsReader();
 		    MonAnalyser.symptomsCounter();
 			MonAnalyser.symptomsWriter(); 
 			
