@@ -24,7 +24,7 @@ public class ObjAnalyser extends AnalyticsCounter {
 	}
 	
 	public ISymptomReader symptomsReader() {
-		this.symptomsReader = symptomsReader();
+		this.symptomsReader = (ISymptomReader) symptomsReader.GetSymptoms();
 		return symptomsReader;
 	}
 	

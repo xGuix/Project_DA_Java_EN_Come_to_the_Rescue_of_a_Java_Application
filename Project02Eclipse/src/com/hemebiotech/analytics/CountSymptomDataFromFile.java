@@ -6,13 +6,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class CountSymptomDataFromFile implements ISymptomCounter {
+public class CountSymptomDataFromFile implements ISymptomCounter {
 
 	private String filepath;
+	
 	public CountSymptomDataFromFile(String filepath) {
 		this.filepath = filepath;
 	}
-
 	
 	public List<String> CountSymptoms() {
 		List<String> Counter = new ArrayList<String>();
@@ -32,11 +32,16 @@ public abstract class CountSymptomDataFromFile implements ISymptomCounter {
 					}
 				}
 			}
-
 			catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
 		return Counter;
+	}
+
+	@Override
+	public List<String> symptomsCounter() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

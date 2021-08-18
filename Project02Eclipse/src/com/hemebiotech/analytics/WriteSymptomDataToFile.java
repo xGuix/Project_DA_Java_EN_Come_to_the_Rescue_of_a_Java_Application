@@ -5,10 +5,14 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.TreeMap;
 
-
-public abstract class WriteSymptomDataToFile implements ISymptomWriter {
+public class WriteSymptomDataToFile implements ISymptomWriter {
 	
-	public WriteSymptomDataToFile(String filepath) throws IOException {
+	private String filepath;
+	public WriteSymptomDataToFile(String filepath) {
+		this.filepath = filepath;
+	}
+	
+	public void SymptomsCounted(String filepath) throws IOException {
 		
 		FileWriter writer = new FileWriter ("result.out");
 		Map<String,Integer> SymptomsCounted = new TreeMap<String,Integer>();
@@ -25,6 +29,13 @@ public abstract class WriteSymptomDataToFile implements ISymptomWriter {
 						writer.close();
 						return;
 					}
-				}
+		writer.close();
+		}
+	}
+
+	@Override
+	public void symptomsWriter(TreeMap<String, Integer> symptomsCounted) {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -1,7 +1,9 @@
 package com.hemebiotech.analytics;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 
 public interface ISymptomWriter {
-	void symptomsWriter(HashMap<String, Integer> symptomsCounted);
+	
+	void symptomsWriter(TreeMap<String, Integer> symptomsCounted);
+
 }

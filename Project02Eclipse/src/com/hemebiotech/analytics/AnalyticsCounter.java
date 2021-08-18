@@ -1,8 +1,5 @@
 package com.hemebiotech.analytics;
 
-import java.util.HashMap;
-import java.util.List;
-
 public class AnalyticsCounter {
 	
 	public static void main(String args[]) throws Exception {
@@ -11,7 +8,7 @@ public class AnalyticsCounter {
 		final String outputFile = "result.out";
 
 		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
-			null, new WriteSymptomDataToFile(outputFile));
+			new CountSymptomDataFromFile(inputFile), new WriteSymptomDataToFile(outputFile));
 			MonAnalyser.symptomsReader();
 		    MonAnalyser.symptomsCounter();
 			MonAnalyser.symptomsWriter(); 
