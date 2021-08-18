@@ -3,7 +3,7 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.TreeMap;
 
-public class ObjAnalyser extends AnalyticsCounter {
+public class ObjAnalyser {
 
 	//J'ai besoin d'une façon de lire
 	private ISymptomReader symptomsReader;
@@ -23,18 +23,18 @@ public class ObjAnalyser extends AnalyticsCounter {
 		this.symptomsWriter = symptomsWriter;
 	}
 	
-	public ISymptomReader symptomsReader() {
-		this.symptomsReader = (ISymptomReader) symptomsReader.GetSymptoms();
+	public ISymptomReader symptomsReader(String inputFile) {
+		this.symptomsReader = symptomsReader(inputFile);
 		return symptomsReader;
 	}
 	
-	public ISymptomCounter symptomsCounter() {
-		this.symptomsCounter = symptomsCounter();
+	public ISymptomCounter symptomsCounter(String filepath) {
+		this.symptomsCounter = symptomsCounter(filepath);
 		return symptomsCounter;
 	    }
 	
-	public ISymptomWriter symptomsWriter() {
-		this.symptomsWriter = symptomsWriter();
+	public ISymptomWriter symptomsWriter(String outputFile) {
+		this.symptomsWriter = symptomsWriter(outputFile);
 		return symptomsWriter;
 	}
 }
