@@ -15,7 +15,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter {
 	}
 	
 	public List<String> CountSymptoms() {
-		ArrayList<String> Counter = new ArrayList<String>();
+		List<String> Counter = new ArrayList<String>();
 
 		if (filepath != null) {
 			try {
