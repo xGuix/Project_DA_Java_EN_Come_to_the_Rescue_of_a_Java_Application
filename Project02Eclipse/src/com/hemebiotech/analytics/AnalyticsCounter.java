@@ -8,16 +8,12 @@ public class AnalyticsCounter
 		final String outputFile = "result.out";
 
 		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile("symptoms.txt"),
-		new CountSymptomDataFromFile(outputFile), new WriteSymptomDataToFile("result.out"));
-		
-		inputFile = MonAnalyser.symptomsReader(filepath);
-		
-			// MonAnalyser.symptomsReader(inputFile);
+		new CountSymptomDataFromFile(inputFile), new WriteSymptomDataToFile("result.out"));
+
+			MonAnalyser.getSymptomsList();
 		    // MonAnalyser.symptomsCounter();
-			// MonAnalyser.symptomsWriter(outputFile); 
+			// MonAnalyser.symptomsWriter();
 			
-		    System.out.println(MonAnalyser.symptomsReader(null));
-			System.out.println(MonAnalyser.symptomsCounter());
-			System.out.println(MonAnalyser.symptomsWriter());
+		    System.out.println(MonAnalyser.symptomsReader());
 	}
 }
