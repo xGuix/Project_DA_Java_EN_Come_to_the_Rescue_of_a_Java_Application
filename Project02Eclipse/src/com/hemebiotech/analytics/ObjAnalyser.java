@@ -31,9 +31,9 @@ public class ObjAnalyser extends AnalyticsCounter
 		return symptomsReader;
 	}
 	
-	public ISymptomCounter symptomsCounter()
+	public ISymptomCounter symptomsCounter(List<String> listSymptoms)
 	{
-		this.symptomsCounter = symptomsCounter();
+		this.symptomsCounter = symptomsCounter(listSymptoms);
 		return symptomsCounter;
 	}
 	
@@ -46,5 +46,10 @@ public class ObjAnalyser extends AnalyticsCounter
 	public void getSymptomsList()
 	{
 		this.listSymptoms = symptomsReader.GetSymptoms();
+	}
+	
+	public void listSymptomsWriter()
+	{
+		this.listSymptomsWriter = (TreeMap<String, Integer>) symptomsWriter();
 	}
 }

@@ -11,9 +11,10 @@ public class AnalyticsCounter
 		new CountSymptomDataFromFile(inputFile), new WriteSymptomDataToFile("result.out"));
 
 			MonAnalyser.getSymptomsList();
-		    // MonAnalyser.symptomsCounter();
-			// MonAnalyser.symptomsWriter();
+		    //MonAnalyser.symptomsCounter();
+			MonAnalyser.listSymptomsWriter();
 			
-		    System.out.print(MonAnalyser.listSymptoms);
+		    System.out.println(MonAnalyser.listSymptoms);
+		    System.out.println(MonAnalyser.listSymptomsWriter);
 	}
 }
