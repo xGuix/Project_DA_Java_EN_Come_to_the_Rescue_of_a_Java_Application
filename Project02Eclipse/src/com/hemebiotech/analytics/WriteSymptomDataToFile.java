@@ -2,6 +2,7 @@ package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -34,8 +35,8 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 	}
 
 	@Override
-	public void symptomsWriter(TreeMap<String, Integer> symptomsCounted) {
+	public ArrayList<String> symptomsWriter(TreeMap<String, Integer> listSymptomsWriter) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 }

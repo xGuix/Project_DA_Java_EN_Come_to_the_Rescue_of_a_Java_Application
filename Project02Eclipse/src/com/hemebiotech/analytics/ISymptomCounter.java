@@ -1,9 +1,9 @@
 package com.hemebiotech.analytics;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public interface ISymptomCounter {
 
-	List<String> symptomsCounter();
+	ArrayList<String> symptomsCounter();
 	
 }

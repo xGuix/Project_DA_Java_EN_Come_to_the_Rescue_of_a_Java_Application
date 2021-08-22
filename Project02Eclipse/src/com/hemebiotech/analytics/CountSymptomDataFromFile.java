@@ -40,7 +40,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter {
 	}
 
 	@Override
-	public List<String> symptomsCounter() {
+	public ArrayList<String> symptomsCounter() {
 		// TODO Auto-generated method stub
 		return null;
 	}

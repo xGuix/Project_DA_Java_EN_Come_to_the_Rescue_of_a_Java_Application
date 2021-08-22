@@ -1,5 +1,6 @@
 package com.hemebiotech.analytics;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -31,15 +32,15 @@ public class ObjAnalyser extends AnalyticsCounter
 		return symptomsReader;
 	}
 	
-	public ISymptomCounter symptomsCounter(List<String> listSymptoms)
+	public ISymptomCounter symptomsCounter(ArrayList<String> listSymptoms)
 	{
 		this.symptomsCounter = symptomsCounter(listSymptoms);
 		return symptomsCounter;
 	}
 	
-	public ISymptomWriter symptomsWriter()
+	public ISymptomWriter symptomsWriter(TreeMap<String, Integer> listSymptomsWriter)
 	{
-		this.symptomsWriter = symptomsWriter();
+		this.symptomsWriter = symptomsWriter(listSymptomsWriter);
 		return symptomsWriter;
 	}
 
@@ -50,6 +51,7 @@ public class ObjAnalyser extends AnalyticsCounter
 	
 	public void listSymptomsWriter()
 	{
-		this.listSymptomsWriter = (TreeMap<String, Integer>) symptomsWriter();
+		this.symptomsWriter = symptomsWriter(listSymptomsWriter);
+		// this.listSymptoms = symptomsWriter.symptomsWriter(null);
 	}
 }
