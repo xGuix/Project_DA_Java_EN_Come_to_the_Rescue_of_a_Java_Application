@@ -38,7 +38,7 @@ public class ObjAnalyser extends AnalyticsCounter
 		return symptomsCounter;
 	}
 	
-	public ISymptomWriter symptomsWriter(TreeMap<String, Integer> listSymptomsWriter)
+	public ISymptomWriter symptomsWriter(TreeMap<String,Integer> listSymptomsWriter)
 	{
 		this.symptomsWriter = symptomsWriter(listSymptomsWriter);
 		return symptomsWriter;
@@ -49,9 +49,8 @@ public class ObjAnalyser extends AnalyticsCounter
 		this.listSymptoms = symptomsReader.GetSymptoms();
 	}
 	
-	public void listSymptomsWriter()
+	public void getSymptomsCounted()
 	{
-		this.symptomsWriter = symptomsWriter(listSymptomsWriter);
-		// this.listSymptoms = symptomsWriter.symptomsWriter(null);
+		this.listSymptomsWriter = symptomsWriter.symptomsWriter(listSymptomsWriter);
 	}
 }

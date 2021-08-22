@@ -13,9 +13,10 @@ public class AnalyticsCounter
 			MonAnalyser.getSymptomsList();
 		    System.out.println(MonAnalyser.listSymptoms);
 		    
-			//MonAnalyser.symptomsCounter();
+			MonAnalyser.getSymptomsCounted(MonAnalyser.listSymptoms);
+			System.out.println(MonAnalyser.listSymptomsWriter);
 			
-		    MonAnalyser.listSymptomsWriter();
-		    System.out.println(MonAnalyser.listSymptomsWriter);
+		    // MonAnalyser.symptomsReader();
+		    //System.out.println(MonAnalyser.symptomsWriter);
 	}
 }
