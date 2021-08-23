@@ -1,8 +1,10 @@
 package com.hemebiotech.analytics;
 
+import java.io.IOException;
+
 public class AnalyticsCounter
 {
-	public static void main(String args[]) throws Exception
+	public static void main(String args[]) throws IOException
 	{
 		final String inputFile = "symptoms.txt";
 		final String outputFile = "result.out";
@@ -16,7 +18,7 @@ public class AnalyticsCounter
 		    MonAnalyser.getSymptomsCounted();
 		    System.out.println(MonAnalyser.listSymptomsCounted);
 		    
-		    MonAnalyser.getSymptomsWrited();
+		    // MonAnalyser.getSymptomsWrited();
 		   
 	}
 }
