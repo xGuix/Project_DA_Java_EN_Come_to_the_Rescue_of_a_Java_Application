@@ -1,5 +1,4 @@
 package com.hemebiotech.analytics;
-
 import java.io.IOException;
 
 public class AnalyticsCounter
@@ -18,7 +17,6 @@ public class AnalyticsCounter
 		    MonAnalyser.getSymptomsCounted();
 		    System.out.println(MonAnalyser.listSymptomsCounted);
 		    
-		    // MonAnalyser.getSymptomsWrited();
-		   
+		    // MonAnalyser.getSymptomsWrited();		   
 	}
 }
