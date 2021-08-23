@@ -12,9 +12,9 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 		this.filepath = filepath;
 	}
 
-	public TreeMap<String,Integer> getSymptomsWrited() throws IOException {
+	public TreeMap<String,Integer> getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted) throws IOException {
 		
-		FileWriter writer = new FileWriter ("result.out");
+		FileWriter writer = new FileWriter (filepath);
 		TreeMap<String,Integer> listWrited = new TreeMap<String,Integer>();
 		
 		for(Entry<String, Integer> entry : listWrited.entrySet()){
@@ -34,7 +34,4 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 		return listWrited;
 	}
 
-	public TreeMap<String, Integer> getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted)throws Exception{
-		return getSymptomsWrited();
-	}
 }

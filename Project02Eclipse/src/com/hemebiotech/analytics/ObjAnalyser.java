@@ -3,7 +3,7 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.TreeMap;
 
-public class ObjAnalyser extends AnalyticsCounter
+public class ObjAnalyser
 {
 
 	//J'ai besoin d'une façon de lire
@@ -15,7 +15,6 @@ public class ObjAnalyser extends AnalyticsCounter
 
 	List<String> listSymptoms;
 	TreeMap<String,Integer> listSymptomsCounted;
-	TreeMap<String,Integer> listSymptomsWrited;
 	
 	//Mon constructeur me permet de construire un objet 
 	//ObjAnalyser avec les caractéristiques que je lui donne
@@ -56,6 +55,6 @@ public class ObjAnalyser extends AnalyticsCounter
 		
 	public void getSymptomsWrited() throws Exception
 	{
-		this.listSymptomsWrited = symptomsWriter.getSymptomsWrited(listSymptomsWrited);
+		symptomsWriter.getSymptomsWrited(listSymptomsCounted);
 	}
 }

@@ -14,21 +14,21 @@ public class CountSymptomDataFromFile implements ISymptomCounter {
 		this.filepath = filepath;
 	}
 	
-	public TreeMap<String, Integer> getSymptomsCounted() {
-		TreeMap<String, Integer> Counter = new TreeMap<String,Integer>();
+	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms) {
+		TreeMap<String, Integer> counter = new TreeMap<String,Integer>();
 
 		if (filepath != null) {
 			try {
-				BufferedReader counter = new BufferedReader(new FileReader(filepath));
-				String count = counter.readLine();
-				for (int i = 0; count != null; i++) {
-					count = counter.readLine();
-					System.out.println("ligne : " + i);
+				BufferedReader reader = new BufferedReader(new FileReader(filepath));
+				String count = reader.readLine();
+				for (String symptom : listSymptoms) {
+					count = reader.readLine();
+					
 					System.out.println("Symptoms : " + count);
 					System.out.println();
 
 					if (count == null) {
-						counter.close();
+						reader.close();
 					}
 				}
 			}
@@ -36,10 +36,6 @@ public class CountSymptomDataFromFile implements ISymptomCounter {
 				e.printStackTrace();
 			}
 		}
-		return Counter;
-	}
-
-	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms) {
-		return getSymptomsCounted();
+		return counter;
 	}
 }
