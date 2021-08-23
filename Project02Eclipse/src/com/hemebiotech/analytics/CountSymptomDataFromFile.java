@@ -3,8 +3,8 @@ package com.hemebiotech.analytics;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 
 public class CountSymptomDataFromFile implements ISymptomCounter {
 
@@ -14,8 +14,8 @@ public class CountSymptomDataFromFile implements ISymptomCounter {
 		this.filepath = filepath;
 	}
 	
-	public List<String> CountSymptoms() {
-		List<String> Counter = new ArrayList<String>();
+	public TreeMap<String, Integer> getSymptomsCounted() {
+		TreeMap<String, Integer> Counter = new TreeMap<String,Integer>();
 
 		if (filepath != null) {
 			try {
@@ -39,9 +39,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter {
 		return Counter;
 	}
 
-	@Override
-	public ArrayList<String> symptomsCounter() {
-		// TODO Auto-generated method stub
-		return null;
+	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms) {
+		return getSymptomsCounted();
 	}
 }

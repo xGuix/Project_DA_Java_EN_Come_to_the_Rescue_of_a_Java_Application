@@ -1,6 +1,5 @@
 package com.hemebiotech.analytics;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -15,7 +14,8 @@ public class ObjAnalyser extends AnalyticsCounter
 	private ISymptomCounter symptomsCounter;
 
 	List<String> listSymptoms;
-	TreeMap<String, Integer> listSymptomsWriter;
+	TreeMap<String,Integer> listSymptomsCounted;
+	TreeMap<String,Integer> listSymptomsWrited;
 	
 	//Mon constructeur me permet de construire un objet 
 	//ObjAnalyser avec les caractéristiques que je lui donne
@@ -32,15 +32,15 @@ public class ObjAnalyser extends AnalyticsCounter
 		return symptomsReader;
 	}
 	
-	public ISymptomCounter symptomsCounter(ArrayList<String> listSymptoms)
+	public ISymptomCounter symptomsCounter()
 	{
-		this.symptomsCounter = symptomsCounter(listSymptoms);
+		this.symptomsCounter = symptomsCounter();
 		return symptomsCounter;
 	}
 	
-	public ISymptomWriter symptomsWriter(TreeMap<String,Integer> listSymptomsWriter)
+	public ISymptomWriter symptomsWriter()
 	{
-		this.symptomsWriter = symptomsWriter(listSymptomsWriter);
+		this.symptomsWriter = symptomsWriter();
 		return symptomsWriter;
 	}
 
@@ -51,6 +51,11 @@ public class ObjAnalyser extends AnalyticsCounter
 	
 	public void getSymptomsCounted()
 	{
-		this.listSymptomsWriter = symptomsWriter.symptomsWriter(listSymptomsWriter);
+		this.listSymptomsCounted = symptomsCounter.getSymptomsCounted(listSymptoms);
+	}
+		
+	public void getSymptomsWrited() throws Exception
+	{
+		this.listSymptomsWrited = symptomsWriter.getSymptomsWrited(listSymptomsWrited);
 	}
 }

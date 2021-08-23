@@ -4,6 +4,5 @@ import java.util.TreeMap;
 
 public interface ISymptomWriter {
 	
-	//symptomsWriter (TreeMap<String, Integer> symptomsCounted);
-	TreeMap<String, Integer> symptomsWriter(TreeMap<String, Integer> listSymptomsWriter);
+	TreeMap<String, Integer> getSymptomsWrited(TreeMap<String, Integer> listSymptomsCounted) throws Exception;
 }
