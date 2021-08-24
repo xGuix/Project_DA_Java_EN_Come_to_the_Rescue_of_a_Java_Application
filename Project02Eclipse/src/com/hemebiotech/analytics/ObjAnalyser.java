@@ -5,7 +5,6 @@ import java.util.TreeMap;
 
 public class ObjAnalyser
 {
-
 	// J'ai besoin d'une façon de lire
 	private ISymptomReader symptomsReader;
 	// J'ai besoin d'une façon d'écrire le résultat
