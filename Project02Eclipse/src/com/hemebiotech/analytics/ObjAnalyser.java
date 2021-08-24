@@ -44,17 +44,17 @@ public class ObjAnalyser
 		this.symptomsWriter = symptomsWriter();
 		return symptomsWriter;
 	}
-	// Je déclare ma méthode récuperer la liste symptoms via l'interface
+	// Je déclare ma méthode récuperer la liste symptom via l'interface
 	public void getSymptomsList()
 	{
 		this.listSymptoms = symptomsReader.GetSymptoms();
 	}
-	// Je déclare ma méthode récuperer la liste symptoms compté via l'interface
+	// Je déclare ma méthode compter et trier ma liste symptom via TreeMAp
 	public void getCountedList()
 	{
 		this.listSymptomsCounted = symptomsCounter.getSymptomsCounted(listSymptoms);
 	}
-	// Je déclare ma méthode ecrire la liste compté
+	// Je déclare ma méthode ecrire la liste compté via TreeMap
 	public void getWritedList() throws Exception
 	{
 		symptomsWriter.getSymptomsWrited(listSymptomsCounted);
