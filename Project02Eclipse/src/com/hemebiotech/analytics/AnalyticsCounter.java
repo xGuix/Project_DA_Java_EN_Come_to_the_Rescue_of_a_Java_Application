@@ -1,4 +1,5 @@
 package com.hemebiotech.analytics;
+
 import java.io.IOException;
 
 public class AnalyticsCounter
