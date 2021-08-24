@@ -1,16 +1,5 @@
 package com.hemebiotech.analytics;
 
-<<<<<<< HEAD
-
-public class AnalyticsCounter implements ObjAnalyser {
-	
-	public static void main(String args[]) throws Exception {
-			
-		ObjAnalyser Analyse = new ObjAnalyser (new ReadSymptomDataFromFile(GetSymptoms));
-		Analyse.GetSymptoms( );
-		
-		
-=======
 import java.io.IOException;
 
 public class AnalyticsCounter
@@ -30,7 +19,5 @@ public class AnalyticsCounter
 		    System.out.println(MonAnalyser.listSymptomsCounted);
 		    
 		    // MonAnalyser.getSymptomsWrited();
-		   
->>>>>>> Objet_&_interfaces
 	}
 }
