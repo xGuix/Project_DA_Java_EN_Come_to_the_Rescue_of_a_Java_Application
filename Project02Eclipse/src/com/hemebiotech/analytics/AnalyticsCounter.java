@@ -1,6 +1,7 @@
 package com.hemebiotech.analytics;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.FileReader;
 
@@ -32,6 +33,8 @@ public class AnalyticsCounter {
 		}
 }}
 =======
+=======
+>>>>>>> Fonction_Main
 import java.io.IOException;
 
 public class AnalyticsCounter
@@ -51,7 +54,10 @@ public class AnalyticsCounter
 		    System.out.println(MonAnalyser.listSymptomsCounted);
 		    
 		    // MonAnalyser.getSymptomsWrited();
-		   
 	}
+<<<<<<< HEAD
 }
 >>>>>>> objet_&_interfaces
+=======
+}
+>>>>>>> Fonction_Main
