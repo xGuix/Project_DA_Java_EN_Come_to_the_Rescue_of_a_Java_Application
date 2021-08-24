@@ -25,7 +25,8 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 				String count = reader.readLine();
 				for (String symptom : listSymptoms)
 				{
-					count = reader.readLine();
+					symptom.compareTo(symptom);
+					count = symptom +  (symptom.compareTo(symptom));
 					System.out.println("Symptoms : "+ symptom);
 				}
 				reader.close();

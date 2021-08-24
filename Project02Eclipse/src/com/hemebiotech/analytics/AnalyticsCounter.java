@@ -12,11 +12,10 @@ public class AnalyticsCounter
 		new CountSymptomDataFromFile(outputFile), new WriteSymptomDataToFile(outputFile));
 			// J'appelle ma méthode pour obtenir la liste des symptoms du fichier "symptoms.txt"
 			MonAnalyser.getSymptomsList();
-		    System.out.println(MonAnalyser.listSymptoms);
 		    // J'appelle ma méthodes pour compter les iterations de Sting
 		    MonAnalyser.getCountedList();
 		    System.out.println(MonAnalyser.listSymptomsCounted);
 		    // J'appelle ma méthode pour écrire le résultat dans le fichier "result.out" 
-		    MonAnalyser.getWritedList();		   
+		    //MonAnalyser.getWritedList();		   
 	}
 }
