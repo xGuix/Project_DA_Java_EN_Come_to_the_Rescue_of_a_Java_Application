@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
+
+import javax.sound.sampled.Line;
 
 public class CountSymptomDataFromFile implements ISymptomCounter
 {
@@ -23,10 +26,18 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader(filepath));
 				String count = reader.readLine();
+				Integer symptomNumber = 0;
 				for (String symptom : listSymptoms)
 				{
-					System.out.println("Symptoms : "+ symptom);
-					count= getSymptomsCounted(listSymptoms);
+					count=symptom;
+					// System.out.println("Symptoms : "+ symptom);
+					if (count.equals(symptom))
+					{
+					symptomNumber++;
+					counter.put(symptom,symptomNumber);
+					symptomNumber = Integer.valueOf(symptomNumber);
+					// System.out.println(count);
+					}
 				}
 				reader.close();
 			}
