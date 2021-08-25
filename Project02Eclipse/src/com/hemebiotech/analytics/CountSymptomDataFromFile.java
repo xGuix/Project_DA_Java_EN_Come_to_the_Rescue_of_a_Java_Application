@@ -14,7 +14,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 		this.filepath = filepath;
 	}
 	
-	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms)
+	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms) throws Exception
 	{
 		TreeMap<String, Integer> counter = new TreeMap<String,Integer>();
 
@@ -25,9 +25,8 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 				String count = reader.readLine();
 				for (String symptom : listSymptoms)
 				{
-					symptom.compareTo(symptom);
-					count = symptom +  (symptom.compareTo(symptom));
 					System.out.println("Symptoms : "+ symptom);
+					count= getSymptomsCounted(listSymptoms);
 				}
 				reader.close();
 			}

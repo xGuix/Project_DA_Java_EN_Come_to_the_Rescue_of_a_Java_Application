@@ -50,7 +50,7 @@ public class ObjAnalyser
 		this.listSymptoms = symptomsReader.GetSymptoms();
 	}
 	// Je déclare ma méthode compter et trier ma liste symptom via TreeMAp
-	public void getCountedList()
+	public void getCountedList() throws Exception
 	{
 		this.listSymptomsCounted = symptomsCounter.getSymptomsCounted(listSymptoms);
 	}
