@@ -1,18 +1,19 @@
 package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-public class WriteSymptomDataToFile implements ISymptomWriter {
-	
+public class WriteSymptomDataToFile implements ISymptomWriter
+{
 	private String filepath;
-	public WriteSymptomDataToFile(String filepath) {
+	public WriteSymptomDataToFile(String filepath)
+	{
 		this.filepath = filepath;
 	}
 
-	public TreeMap<String,Integer> getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted) throws IOException {
+	public TreeMap<String,Integer> getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted) throws Exception
+	{
 		
 		FileWriter writer = new FileWriter (filepath);
 		TreeMap<String,Integer> listWrited = new TreeMap<String,Integer>();
@@ -33,5 +34,4 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 		}
 		return listWrited;
 	}
-
 }
