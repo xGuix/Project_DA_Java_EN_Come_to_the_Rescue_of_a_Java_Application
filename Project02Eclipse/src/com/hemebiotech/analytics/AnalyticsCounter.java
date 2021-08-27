@@ -20,7 +20,11 @@ public class AnalyticsCounter
 		    // MonAnalyser.getSymptomsWrited();
 =======
 		    // J'appelle ma méthode pour écrire le résultat dans le fichier "result.out" 
+<<<<<<< HEAD
 		    //MonAnalyser.getWritedList();		   
+>>>>>>> Objet_&_interfaces
+=======
+		    MonAnalyser.getWritedList();
 >>>>>>> Objet_&_interfaces
 	}
 }
