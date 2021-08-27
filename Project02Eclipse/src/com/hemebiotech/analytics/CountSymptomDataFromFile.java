@@ -19,27 +19,28 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 	{
 		// J'instancie ma TreeMap counter pour récuperer le résultat du triage et du comptage
 		TreeMap<String, Integer> counter = new TreeMap<String,Integer>();
-		// Je créer me conditions d'analyse et de de comptage
+		// Je créer mes conditions d'analyse et de de comptage
 		if (filepath != null)
 		{
 			try {
 				// J'instancie mon Reader pour lire les lignes de ma listSymptom
 				BufferedReader reader = new BufferedReader(new FileReader(filepath));
 				String count = reader.readLine();
-				Integer symptomNumber = 0;
+				Integer numberOfsymptom = 1;
 				// Je crée une boucle de lecture listSymptomms pour les récuperer
 				for (String symptom : listSymptoms)
 				{	
-					count=symptom;
-					count.compareTo(symptom);
-					// J'ajoute chaque ligne à ma TreeMap 
-					counter.put(symptom,symptomNumber);
-
-					// Je compare ma nouvelle entrée à la précedente
-					if (symptom.equals(count))
+					if (symptom != null)
 					{
-						symptomNumber++;
+						counter.put(symptom, numberOfsymptom);
+						numberOfsymptom++;
+					}
+					else
+					{
+						reader.readLine();
 						count.compareTo(symptom);
+						count.contentEquals(symptom);
+						numberOfsymptom = 1;
 					}
 				}
 				reader.close();
