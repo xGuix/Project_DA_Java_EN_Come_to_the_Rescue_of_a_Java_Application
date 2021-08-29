@@ -4,27 +4,18 @@ public class AnalyticsCounter
 {
 	public static void main(String args[]) throws Exception
 	{
-		// Je déclare mes fichier d'entrées et de sorties
+		// Je dï¿½clare mes fichier d'entrï¿½es et de sorties
 		final String inputFile = "symptoms.txt";
 		final String outputFile = "result.out";
 		// J'instancie ma class Objet d'analyse "ObjAnalyser"
 		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
 		new CountSymptomDataFromFile(outputFile), new WriteSymptomDataToFile(outputFile));
-			// J'appelle ma méthode pour obtenir la liste des symptoms du fichier "symptoms.txt"
+			// J'appelle ma mï¿½thode pour obtenir la liste des symptoms du fichier "symptoms.txt"
 			MonAnalyser.getSymptomsList();
-		    // J'appelle ma méthodes pour compter les iterations de Sting
+		    // J'appelle ma mï¿½thodes pour compter les iterations de Sting
 		    MonAnalyser.getCountedList();
 		    System.out.println(MonAnalyser.listSymptomsCounted);
-<<<<<<< HEAD
-		    
-		    // MonAnalyser.getSymptomsWrited();
-=======
-		    // J'appelle ma méthode pour écrire le résultat dans le fichier "result.out" 
-<<<<<<< HEAD
-		    //MonAnalyser.getWritedList();		   
->>>>>>> Objet_&_interfaces
-=======
+		    // J'appelle ma mï¿½thode pour ï¿½crire le rï¿½sultat dans le fichier "result.out" 
 		    MonAnalyser.getWritedList();
->>>>>>> Objet_&_interfaces
 	}
 }

@@ -9,7 +9,7 @@ import java.util.TreeMap;
 public class CountSymptomDataFromFile implements ISymptomCounter
 {
 	private String filepath;
-	// Je créer ma methode pour lire la liste en mémoire symptomList
+	// Je crï¿½er ma methode pour lire la liste en mï¿½moire symptomList
 	public CountSymptomDataFromFile(String filepath)
 	{
 		this.filepath = filepath;
@@ -17,9 +17,9 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 	// Je creer ma methode TreeMap pour recuperer la listSymptoms
 	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms) throws Exception
 	{
-		// J'instancie ma TreeMap counter pour récuperer le résultat du triage et du comptage
+		// J'instancie ma TreeMap counter pour rï¿½cuperer le rï¿½sultat du triage et du comptage
 		TreeMap<String, Integer> counter = new TreeMap<String,Integer>();
-		// Je créer mes conditions d'analyse et de de comptage
+		// Je crï¿½er mes conditions d'analyse et de de comptage
 		if (filepath != null)
 		{
 			try {
@@ -27,7 +27,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 				BufferedReader reader = new BufferedReader(new FileReader(filepath));
 				String count = reader.readLine();
 				Integer numberOfsymptom = 1;
-				// Je crée une boucle de lecture listSymptomms pour les récuperer
+				// Je crï¿½e une boucle de lecture listSymptomms pour les rï¿½cuperer
 				for (String symptom : listSymptoms)
 				{	
 					if (symptom != null)
