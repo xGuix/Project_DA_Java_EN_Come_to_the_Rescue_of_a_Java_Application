@@ -21,6 +21,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter
 				Integer count = entry.getValue();
 
 				writer.write("Symptom : " + symptom + " / " + "Nombre : " + count);
+				writer.write(System.lineSeparator());
 		}
 		writer.close();
 	}
