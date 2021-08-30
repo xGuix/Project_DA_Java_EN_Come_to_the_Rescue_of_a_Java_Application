@@ -9,7 +9,7 @@ import java.util.TreeMap;
 public class CountSymptomDataFromFile implements ISymptomCounter
 {
 	private String filepath;
-	// Je créer ma methode pour lire la liste en mémoire symptomList
+	// Je creer ma methode pour lire la liste en memoire symptomList
 	public CountSymptomDataFromFile(String filepath)
 	{
 		this.filepath = filepath;
@@ -17,30 +17,33 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 	// Je creer ma methode TreeMap pour recuperer la listSymptoms
 	public TreeMap<String, Integer> getSymptomsCounted(List<String> listSymptoms) throws Exception
 	{
-		// J'instancie ma TreeMap counter pour récuperer le résultat du triage et du comptage
+		// J'instancie ma TreeMap counter pour recuperer le rï¿½sultat du triage et du comptage
 		TreeMap<String, Integer> counter = new TreeMap<String,Integer>();
-		// Je créer mes conditions d'analyse et de de comptage
+		// Je crÃ©er mes conditions d'analyse et de comptage tant que les lignes ne renvoient pas null
 		if (filepath != null)
 		{
 			try {
 				// J'instancie mon Reader pour lire les lignes de ma listSymptom
 				BufferedReader reader = new BufferedReader(new FileReader(filepath));
+				// Je dÃ©clare count pour lire et compter mes symptoms
 				String count = reader.readLine();
+				// Je dÃ©clare mon integer pour le comptage
 				Integer numberOfsymptom = 1;
-				// Je crée une boucle de lecture listSymptomms pour les récuperer
+				// Je cree une boucle de lecture listSymptomms pour les recuperer
 				for (String symptom : listSymptoms)
 				{	
-					if (symptom != null)
+					// J'ajoute chaque ligne Ã  ma TreeMap counter
+					counter.put(symptom, numberOfsymptom);
+					// J'utilise count pour comparer les symptoms
+ 					count = counter.lastKey();
+					// Booleen pour rÃ©pondre False quand les symptoms sont differents
+					if (symptom != count)
 					{
-						counter.put(symptom, numberOfsymptom);
 						numberOfsymptom++;
 					}
 					else
 					{
-						reader.readLine();
-						count.compareTo(symptom);
-						count.contentEquals(symptom);
-						numberOfsymptom = 1;
+						numberOfsymptom = 0;
 					}
 				}
 				reader.close();
