@@ -12,25 +12,17 @@ public class WriteSymptomDataToFile implements ISymptomWriter
 		this.filepath = filepath;
 	}
 
-	public TreeMap<String,Integer> getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted) throws Exception
+	public void getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted) throws Exception
 	{
 		FileWriter writer = new FileWriter (filepath);
-		TreeMap<String,Integer> listWrited = new TreeMap<String,Integer>();
 		
-		for(Entry<String, Integer> entry : listWrited.entrySet()){
-					String symptom = entry.getKey();
-					Integer count = entry.getValue();
+		for(Entry<String, Integer> entry : listSymptomsCounted.entrySet()){
+				String symptom = entry.getKey();
+				Integer count = entry.getValue();
 
-					System.out.println(symptom + " / " + count);
-					writer.write("Symptom : " + symptom + " / " + "Nombre : " + count);
-					writer.write(System.lineSeparator());
-
-					if (symptom == null) {
-						writer.close();
-						return listWrited;
-					}
-		writer.close();
+				writer.write("Symptom : " + symptom + " / " + "Nombre : " + count);
+				writer.write(System.lineSeparator());
 		}
-		return listWrited;
+		writer.close();
 	}
 }
