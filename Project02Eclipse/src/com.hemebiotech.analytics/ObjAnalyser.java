@@ -6,11 +6,7 @@ import java.util.TreeMap;
 public class ObjAnalyser
 {
 	// J'ai besoin d'une fa�on de lire
-<<<<<<< HEAD:Project02Eclipse/src/com.hemebiotech.analytics/ObjAnalyser.java
-s	private ISymptomReader symptomsReader;
-=======
 	private ISymptomReader symptomsReader;
->>>>>>> origin/Objet_&_interfaces:Project02Eclipse/src/com/hemebiotech/analytics/ObjAnalyser.java
 	// J'ai besoin d'une fa�on d'�crire le r�sultat
 	private ISymptomWriter symptomsWriter;
 	// J'ai besoin d'une fa�on de compter et trier
