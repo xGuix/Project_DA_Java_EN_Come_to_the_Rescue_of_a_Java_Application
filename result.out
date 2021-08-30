@@ -1,23 +1,23 @@
-Symptom : anxiety / Nombre : 5
-Symptom : arrhythmias / Nombre : 3
-Symptom : blindness / Nombre : 1
-Symptom : blurred vision / Nombre : 5
-Symptom : constricted pupils / Nombre : 3
-Symptom : cough / Nombre : 6
-Symptom : dialated pupils / Nombre : 4
-Symptom : dizziness / Nombre : 5
-Symptom : dry mouth / Nombre : 8
-Symptom : fever / Nombre : 7
-Symptom : headache / Nombre : 3
-Symptom : high blood pressure / Nombre : 10
-Symptom : inflamation / Nombre : 7
-Symptom : insomnia / Nombre : 4
-Symptom : low blood pressure / Nombre : 4
-Symptom : nausea / Nombre : 5
-Symptom : rapid heart rate / Nombre : 1
-Symptom : rash / Nombre : 4
-Symptom : shortness of breath / Nombre : 3
-Symptom : stiff neck / Nombre : 4
-Symptom : stomach pain / Nombre : 3
-Symptom : tremor / Nombre : 4
-Symptom : water retention / Nombre : 1
+Symptom /             anxiety =[ 5 ] 
+Symptom /         arrhythmias =[ 3 ] 
+Symptom /           blindness =[ 1 ] 
+Symptom /      blurred vision =[ 5 ] 
+Symptom /  constricted pupils =[ 3 ] 
+Symptom /               cough =[ 6 ] 
+Symptom /     dialated pupils =[ 4 ] 
+Symptom /           dizziness =[ 5 ] 
+Symptom /           dry mouth =[ 8 ] 
+Symptom /               fever =[ 7 ] 
+Symptom /            headache =[ 3 ] 
+Symptom / high blood pressure =[ 10 ] 
+Symptom /         inflamation =[ 7 ] 
+Symptom /            insomnia =[ 4 ] 
+Symptom /  low blood pressure =[ 4 ] 
+Symptom /              nausea =[ 5 ] 
+Symptom /    rapid heart rate =[ 1 ] 
+Symptom /                rash =[ 4 ] 
+Symptom / shortness of breath =[ 3 ] 
+Symptom /          stiff neck =[ 4 ] 
+Symptom /        stomach pain =[ 3 ] 
+Symptom /              tremor =[ 4 ] 
+Symptom /     water retention =[ 1 ] 
