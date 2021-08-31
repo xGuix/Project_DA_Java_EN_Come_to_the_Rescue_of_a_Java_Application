@@ -1,4 +1,5 @@
 package com.hemebiotech.analytics;
+package com.*;
 
 public class AnalyticsCounter
 {
