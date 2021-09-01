@@ -3,7 +3,7 @@ package com.hemebiotech.analytics;
 /**<p>
  * <b>La class AnalyticsCounter qui appelle l'objet {ObjAnalyser}</b> {@link ObjAnalyser}
  * </p>
- * Les 3 classes utilisees par l'objet pour traiter les fichiers :</br>
+ * Les 3 classes utilisees par l'objet pour traiter les fichiers :<br>
  * <ul>
  * <li> METHODE DE LECTURE DE FICHIER // 
  * {@link ReadSymptomDataFromFile} implement ISymptomReader
@@ -12,7 +12,7 @@ package com.hemebiotech.analytics;
  * <li> METHODE D'ECRITURE DE FICHIER // 
  * {@link WriteSymptomDataToFile} implement ISymptomWriter
  * </ul> 
- * </p>
+ * 
  * @see ISymptomReader
  * Interface ISymptomReader de {@link ReadSymptomDataFromFile}
  * @see ISymptomCounter
@@ -29,21 +29,20 @@ public class AnalyticsCounter
 	/**
 	 * <p>
 	 * Je declare les liens vers les fichiers d'entrées (inputFile) et de sorties (outputFile)
-	 * </p>
+	 * </p><p>
 	 * <b>Instance de l'objet {@link ObjAnalyser} nommée (MonAnalyser)</b>
 	 * </p>
 	 * Utilisation des 3 methodes de mon objet:
 	 * <ul>
-	 * <li>	 .getSymptomsList() {@link ObjAnalyser.getSymptomsList}
+	 * <li>	 .getSymptomsList() {@link ObjAnalyser.getSymptomsList()}
 	 * <li>	 .getCountedList() {@link ObjAnalyser.getCountedList}
 	 * <li>	 .getWritedList() {@link ObjAnalyser.getWritedList}
 	 * </ul>
-	 * </p> 
 	 * 
-	 * @param Fichier d'entrée (inputFile)
-	 * @param Fichier de sortie (outputFile)
-	 * 
-	 * @throws Exception
+	 * @param inputFile Fichier d'entrée (inputFile)
+	 * @param outputFile Fichier de sortie (outputFile)
+	 * @param args no Value
+	 * @throws Exception Try / catch
 	 */
 	
 	public static void main(String args[]) throws Exception

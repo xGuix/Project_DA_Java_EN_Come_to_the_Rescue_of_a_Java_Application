@@ -2,7 +2,12 @@ package com.hemebiotech.analytics;
 
 import java.util.List;
 import java.util.TreeMap;
-
+/**
+ * 
+ * 
+ * @author xGuix
+ * @version v1.0
+ */
 public class CountSymptomDataFromFile implements ISymptomCounter
 {
 // Je creer ma methode TreeMap pour recuperer la listSymptoms

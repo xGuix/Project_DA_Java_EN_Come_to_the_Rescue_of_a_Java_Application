@@ -3,7 +3,12 @@ package com.hemebiotech.analytics;
 import java.io.FileWriter;
 import java.util.Map.Entry;
 import java.util.TreeMap;
-
+/**
+ * 
+ * 
+ * @author xGuix
+ * @version v1.0 *
+ */
 public class WriteSymptomDataToFile implements ISymptomWriter
 {
 	private String filepath;
@@ -11,7 +16,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter
 	{
 		this.filepath = filepath;
 	}
-
+	
 	public void getSymptomsWrited(TreeMap<String,Integer> listSymptomsCounted) throws Exception
 	{
 		FileWriter writer = new FileWriter (filepath);

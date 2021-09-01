@@ -55,7 +55,7 @@ public class ObjAnalyser
 	 * </ul>
 	 * </p>
 	 * @param symptomsReader {@link ISymptomReader}
-	 * @param symptomsCounter {@link ISymptomCounter}
+	 * @param symptomsCounter {@link ISymptomCounter	}
 	 * @param symptomsWriter {@link ISymptomWriter}
 	 */
 	public ObjAnalyser(ISymptomReader symptomsReader, ISymptomCounter symptomsCounter, ISymptomWriter symptomsWriter)
