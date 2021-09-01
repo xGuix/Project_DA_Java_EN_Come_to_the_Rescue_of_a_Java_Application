@@ -18,11 +18,11 @@ import java.util.TreeMap;
 public interface ISymptomCounter {
 	/**
 	 * <b>Si aucune data n'est présente, renvoi une liste vide.</b>
-	 * </p>
+	 * <p>
 	 * @param listSymptoms<br>
 	 * Prend tous les symptoms extraits de la liste brute.
 	 * @return getSymptomsCounted<br> 
-	 * Trie et compte de la listSymptoms et retourne : clé = symptoms & Valeur = nombre de fois (symptom). 
+	 * Trie et compte de la listSymptoms et retourne : clé = symptoms/Valeur = nombre de fois (symptom). 
 	 * @throws Exception Try / catch
 	 * </p>
 	 */
