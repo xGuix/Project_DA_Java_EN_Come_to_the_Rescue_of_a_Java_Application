@@ -16,7 +16,5 @@ public class AnalyticsCounter
 		    MonAnalyser.getCountedList();
 		    // J'appelle ma methode pour ecrire le resultat dans le fichier "result.out" 
 		    MonAnalyser.getWritedList();
-		    
-		    System.out.println(MonAnalyser.listSymptomsCounted);
 	}
 }
