@@ -1,20 +1,64 @@
 package com.hemebiotech.analytics;
 
+/**<p>
+ * <b>La class AnalyticsCounter qui appelle l'objet {ObjAnalyser}</b> {@link ObjAnalyser}
+ * </p>
+ * Les 3 classes utilisees par l'objet pour traiter les fichiers :</br>
+ * <ul>
+ * <li> METHODE DE LECTURE DE FICHIER // 
+ * {@link ReadSymptomDataFromFile} implement ISymptomReader
+ * <li> METHODE DE COMPTAGE DE LISTE // 
+ * {@link CountSymptomDataFromFile} implement ISymptomCounter
+ * <li> METHODE D'ECRITURE DE FICHIER // 
+ * {@link WriteSymptomDataToFile} implement ISymptomWriter
+ * </ul> 
+ * </p>
+ * @see ISymptomReader
+ * Interface ISymptomReader de {@link ReadSymptomDataFromFile}
+ * @see ISymptomCounter
+ * Interface ISymptomCounter de {@link CountSymptomDataFromFile}
+ * @see ISymptomWriter
+ * Interface ISymptomWriter de {@link WriteSymptomDataToFile}
+ * 
+ * @author xGuix
+ * @version v1.0
+ */
+
 public class AnalyticsCounter
 {
+	/**
+	 * <p>
+	 * Je declare les liens vers les fichiers d'entrées (inputFile) et de sorties (outputFile)
+	 * </p>
+	 * <b>Instance de l'objet {@link ObjAnalyser} nommée (MonAnalyser)</b>
+	 * </p>
+	 * Utilisation des 3 methodes de mon objet:
+	 * <ul>
+	 * <li>	 .getSymptomsList() {@link ObjAnalyser.getSymptomsList}
+	 * <li>	 .getCountedList() {@link ObjAnalyser.getCountedList}
+	 * <li>	 .getWritedList() {@link ObjAnalyser.getWritedList}
+	 * </ul>
+	 * </p> 
+	 * 
+	 * @param Fichier d'entrée (inputFile)
+	 * @param Fichier de sortie (outputFile)
+	 * 
+	 * @throws Exception
+	 */
+	
 	public static void main(String args[]) throws Exception
 	{
-		// Je declare mes fichier d'entr�es et de sorties
+		// Déclare le nom des fichiers in et out
 		final String inputFile = "symptoms.txt";
 		final String outputFile = "result.out";
-		// J'instancie ma class Objet d'analyse "ObjAnalyser"
+		// Instance de class Objet {ObjAnalyser} avec les valeurs mes methodes
 		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
 		new CountSymptomDataFromFile(), new WriteSymptomDataToFile(outputFile));
-			// J'appelle ma methode pour obtenir la liste des symptoms du fichier "symptoms.txt"
+			// Appelle de methode pour obtenir la liste des symptoms du fichier "symptoms.txt"
 			MonAnalyser.getSymptomsList();
-		    // J'appelle ma methodes pour compter les iterations de Sting
+		    // Appelle de methodes pour compter les symptoms
 		    MonAnalyser.getCountedList();
-		    // J'appelle ma methode pour ecrire le resultat dans le fichier "result.out" 
+		    // Appelle de methode pour ecrire le resultat dans le fichier "result.out"
 		    MonAnalyser.getWritedList();
 	}
 }

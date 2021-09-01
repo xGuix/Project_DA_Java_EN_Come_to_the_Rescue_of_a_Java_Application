@@ -7,15 +7,15 @@ import java.util.List;
  * return value from the operation, which is a list of strings, that may contain
  * many duplications
  * 
- * The implementation does not need to order the list
+ * L'implementation n'a pas besoin d'être dans l'ordre
  * 
  */
 public interface ISymptomReader {
 	/**
-	 * If no data is available, return an empty List
+	 * si aucune data n'est présente, renvoi une liste vide 
 	 * 
 	 * @return a raw listing of all Symptoms obtained from a data source, duplicates
 	 *         are possible/probable
 	 */
-	List<String> GetSymptoms();
+	List<String> getSymptoms();
 }
