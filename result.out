@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Headache: 3
 Rash: 4
 Dilated pupils: 7
@@ -18,3 +19,28 @@ Water retention: 1
 Anxieties: 5
 Blindness: 1
 Arrhythmia: 3
+=======
+Symptom /               anxiety =[ 05 ] 
+Symptom /           arrhythmias =[ 03 ] 
+Symptom /             blindness =[ 01 ] 
+Symptom /        blurred vision =[ 05 ] 
+Symptom /    constricted pupils =[ 03 ] 
+Symptom /                 cough =[ 06 ] 
+Symptom /       dialated pupils =[ 04 ] 
+Symptom /             dizziness =[ 05 ] 
+Symptom /             dry mouth =[ 08 ] 
+Symptom /                 fever =[ 07 ] 
+Symptom /              headache =[ 03 ] 
+Symptom /   high blood pressure =[ 10 ] 
+Symptom /           inflamation =[ 07 ] 
+Symptom /              insomnia =[ 04 ] 
+Symptom /    low blood pressure =[ 04 ] 
+Symptom /                nausea =[ 05 ] 
+Symptom /      rapid heart rate =[ 01 ] 
+Symptom /                  rash =[ 04 ] 
+Symptom /   shortness of breath =[ 03 ] 
+Symptom /            stiff neck =[ 04 ] 
+Symptom /          stomach pain =[ 03 ] 
+Symptom /                tremor =[ 04 ] 
+Symptom /       water retention =[ 01 ] 
+>>>>>>> release
