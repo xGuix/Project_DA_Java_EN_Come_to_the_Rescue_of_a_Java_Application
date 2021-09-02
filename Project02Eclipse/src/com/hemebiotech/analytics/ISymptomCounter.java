@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.TreeMap;
 /**
  * <b> Interface ISymptomCounter</b>
- * <p> Permet de récuperer la liste des symptoms {@link ObjAnalyser.listSymptoms}<br>
- *     Retourne une liste TreeMap  clé/valeur  {@link ObjAnalyser.listSymptomsCounted} <br>
+ * <p> Permet de récuperer la liste des symptoms {@link ObjAnalyser#listSymptoms}<br>
+ *     Retourne une liste TreeMap  clé/valeur  {@link ObjAnalyser#listSymptomsCounted} <br>
  * </p><p>
  * Les doublons sont comptés et la liste est ordonne par ordre alphabetique.
  * </p>
