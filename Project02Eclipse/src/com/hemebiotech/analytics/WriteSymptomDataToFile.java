@@ -37,11 +37,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter
 		for(Entry<String, Integer> entry : listSymptomsCounted.entrySet()){
 				String symptom = entry.getKey();
 				Integer count = entry.getValue(); 
-<<<<<<< HEAD:com/hemebiotech/analytics/WriteSymptomDataToFile.java
-				
-=======
 				// Methode write pour ecrire le fichier et methode format pour formater la sortie string et integer
->>>>>>> release:Project02Eclipse/src/com/hemebiotech/analytics/WriteSymptomDataToFile.java
 				writer.write(String.format("Symptom / "+"%30s", symptom +" =[ "+ String.format("%02d",count) +" ] "));
 				writer.write(System.lineSeparator());
 		}
