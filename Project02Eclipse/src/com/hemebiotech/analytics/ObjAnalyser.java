@@ -31,7 +31,14 @@ import java.util.TreeMap;
  * <li> symptomsWriter {@link WriteSymptomDataToFile} implemente l'interface {@link ISymptomWriter}
  * </ul>
  * <p>
- * 
+ * <b>Contient 3 methodes d'appels {Class outils} pour effectuer le traitement et l'analyse</b><br>
+ * Déclare les methodes respective : getSymptomsList(), getCountedList(), getWritedList().
+ * <ul>
+ * <li> getSymptomsList() {@link ISymptomReader#getSymptoms()}
+ * <li> getCountedList() {@link ISymptomCounter#getSymptomsCounted(List)} 
+ * <li> getWritedList() {@link ISymptomWriter#getSymptomsWrited(TreeMap)}
+ * </ul>
+ * <p>
  * @author xGuix
  * @version v1.0
  */

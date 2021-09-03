@@ -1,18 +1,28 @@
 package com.hemebiotech.analytics;
 
-/**<p>
- * <b>La class AnalyticsCounter qui appelle l'objet {ObjAnalyser}</b> {@link ObjAnalyser}
- * </p>
- * Les 3 classes utilisees par l'objet pour traiter les fichiers :<br>
+/**
+ * <b>La class AnalyticsCounter appelle l'objet {ObjAnalyser}</b> {@link ObjAnalyser}
+ * <p>
+ *  3 methodes de l'objet {@link ObjAnalyser} appellées pour traiter les fichiers :
  * <ul>
- * <li> METHODE DE LECTURE DE FICHIER // 
+ * <li> METHODE DE LECTURE DE FICHIER //
+ * {@link ObjAnalyser#getSymptomsList()}
+ * <li> METHODE DE COMPTAGE DE LISTE //
+ * {@link ObjAnalyser#getCountedList()}
+ * <li> METHODE D'ECRITURE DE FICHIER //
+ * {@link ObjAnalyser#getWritedList()}
+ * </ul> 
+ * <p>
+ *  3 classes outils utilisees par l'objet pour traiter les fichiers :<br>
+ * <ul>
+ * <li> OUTIL DE LECTURE DE FICHIER //
  * {@link ReadSymptomDataFromFile} implement ISymptomReader
- * <li> METHODE DE COMPTAGE DE LISTE // 
+ * <li> OUTIL DE COMPTAGE DE LISTE //
  * {@link CountSymptomDataFromFile} implement ISymptomCounter
- * <li> METHODE D'ECRITURE DE FICHIER // 
+ * <li> OUTIL D'ECRITURE DE FICHIER //
  * {@link WriteSymptomDataToFile} implement ISymptomWriter
  * </ul> 
- * 
+ * <p>
  * @see ISymptomReader
  * Interface ISymptomReader
  * @see ISymptomCounter
@@ -27,13 +37,12 @@ package com.hemebiotech.analytics;
 public class AnalyticsCounter
 {
 	/**
+	 * <b>Déclaration du fichier d'entrée inputFile ("symptoms.txt") et de sortie outputFile ("result.out")</b>
 	 * <p>
-	 * Déclaration du fichier d'entrée inputFile ("symptoms.txt") et de sortie outputFile ("result.out")
-	 * </p><p>
-	 * <b>Instance de l'objet {@link ObjAnalyser} nommée (MyAnalyser)</b>
-	 * 
+	 * Instance de l'objet {@link ObjAnalyser} nommée (MyAnalyser)<br>
+	 * Instance des 3 classes outils.
 	 * </p>
-	 * Appel des 3 methodes de mon objet:
+	 * Appel les 3 methodes qui appellent les 3 outils :
 	 * <ul>
 	 * <li>	 .getSymptomsList() {@link ObjAnalyser#getSymptomsList()}
 	 * <li>	 .getCountedList() {@link ObjAnalyser#getCountedList()}
