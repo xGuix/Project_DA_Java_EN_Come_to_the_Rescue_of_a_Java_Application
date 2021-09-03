@@ -22,3 +22,4 @@ public interface ISymptomReader {
 	 */
 	List<String> getSymptoms();
 }
+ 

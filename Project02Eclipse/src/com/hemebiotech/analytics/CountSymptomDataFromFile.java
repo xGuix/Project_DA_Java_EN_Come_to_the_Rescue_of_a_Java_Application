@@ -28,7 +28,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 	{
 		// Instance de la TreeMap (counter) pour recuperer le resultat du triage et du comptage
 		TreeMap<String, Integer> counter = new TreeMap<String,Integer>();
-				// Declare un integer pour le comptage
+
 				Integer InitialCount = 1;
 				// Cree une boucle de lecture listSymptoms pour recuperer toutes les lignes
 				for (String symptom : listSymptoms)
