@@ -4,7 +4,10 @@ import java.util.List;
 import java.util.TreeMap;
 /**
  * <b>Outil de trie et de comptage via TreeMap</b>
- * <p>Cree TreeMap counter et renvoi à la TreeMap (getSymptomsCounted)
+ * <p>Renvoi la TreeMap (getSymptomsCounted) doublon comptabilisé et en ordre alphabetique.<br>
+ * Implemente l'interface {@link ISymptomCounter}
+ * 
+ * @see ISymptomCounter
  * 
  * @author xGuix
  * @version v1.0

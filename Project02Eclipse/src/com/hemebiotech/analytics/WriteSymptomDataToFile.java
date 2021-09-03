@@ -4,7 +4,11 @@ import java.io.FileWriter;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 /**
- * Ecrit le contenu de la listSymptomsCounted dans le fichier OutputFile (filepath)
+ * <b>Outil d'ecriture de TreeMap vers fichier (texte.out)</b>
+ * <p>Ecrit le contenu de listSymptomsCounted dans le fichier OutputFile (filepath)
+ * Implemente l'interface {@link ISymptomWriter}
+ * 
+ * @see ISymptomWriter
  * 
  * @author xGuix
  * @version v1.0 *

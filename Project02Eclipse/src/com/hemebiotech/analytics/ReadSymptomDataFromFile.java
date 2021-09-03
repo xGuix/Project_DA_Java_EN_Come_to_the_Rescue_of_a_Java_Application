@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Simple brute force implementation
+ * <b>Outil de lecture de fichier de fichier (texte.txt)</b>
+ * <p>Simple brute force - Renvoi une liste brute sans traitement des occurence.<br>
+ * Implemente l'interface {@link ISymptomReader}
+ * 
+ * @see ISymptomReader
  * 
  * @author xGuix
  * @version v1.0
