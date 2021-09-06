@@ -19,7 +19,7 @@ import java.util.TreeMap;
  * <p>
  * <b>Contient les attributs des 2 listes de recuperation :</b>
  * <ul>
- * <li> listSymptoms {@link listSymptoms} Liste des symptoms du fichier (inputFile) 
+ * <li> listSymptoms {@link listSymptoms} Liste des symptoms du fichier (inputFile)
  * <li> listSymptomsCounted {@link listSymptomsCounted} Liste des symptoms trier et compter
  * </ul>
  * <p>
@@ -35,7 +35,7 @@ import java.util.TreeMap;
  * Déclare les methodes respective : getSymptomsList(), getCountedList(), getWritedList().
  * <ul>
  * <li> getSymptomsList() {@link ISymptomReader#getSymptoms()}
- * <li> getCountedList() {@link ISymptomCounter#getSymptomsCounted(List)} 
+ * <li> getCountedList() {@link ISymptomCounter#getSymptomsCounted(List)}
  * <li> getWritedList() {@link ISymptomWriter#getSymptomsWrited(TreeMap)}
  * </ul>
  * <p>
@@ -51,15 +51,15 @@ public class ObjAnalyser
 	private ISymptomCounter symptomsCounter;
 	// Instance de type IsymptomWriter pour ecrire via constructeur {ObjAnalyser}
 	private ISymptomWriter symptomsWriter;
-	
+
 	// Déclaration d'une liste pour récuperer les donnees du fichier inputFile
 	List<String> listSymptoms;
 	// Déclaration d'une TreeMap pour trier et compter les donnees de la listSymptoms
 	TreeMap<String,Integer> listSymptomsCounted;
-	
+
 	/**
 	 * <b>Constructeur permettant de construire l'objet ObjAnalyser</b>
-	 * <p>Avec les attributs de chacunes des 3 interfaces 
+	 * <p>Avec les attributs de chacunes des 3 interfaces
 	 * <ul>
 	 * <li>(symptomsReader) utilise {@link ReadSymptomDataFromFile} via l'interface ISymptomReader
 	 * <li>(symptomsCounter) utilise {@link CountSymptomDataFromFile} via l'interfaceISymptomCounter
@@ -76,7 +76,7 @@ public class ObjAnalyser
 		this.symptomsCounter = symptomsCounter;
 		this.symptomsWriter = symptomsWriter;
 	}
-	
+
 	/**
 	 * <p>
 	 * <b>Declare la methode (symptomsReader) lecture via l'interface ISymptomReader</b>
@@ -110,7 +110,7 @@ public class ObjAnalyser
 		this.symptomsWriter = symptomsWriter();
 		return symptomsWriter;
 	}
-	
+
 	/**
 	 * <p>
 	 * <b>getSymptomsList()</b><br>
@@ -126,7 +126,7 @@ public class ObjAnalyser
 	 * <b>getCountedList()</b><br>
 	 * Declare la methode de recuperation de la liste (listSymptoms) en TreeMap de l'interface
 	 * </p>
-	 * 
+	 *
 	 * @throws Exception Try / catch
 	 */
 	public void getCountedList() throws Exception
@@ -137,7 +137,7 @@ public class ObjAnalyser
 	 * <b>getWritedList()</b><br>
 	 * Declare la methode d'ecriture de la TreeMap (listSymptomsCounted)
 	 * </p>
-	 * 
+	 *
 	 * @throws Exception Try / catch
 	 */
 	public void getWritedList() throws Exception

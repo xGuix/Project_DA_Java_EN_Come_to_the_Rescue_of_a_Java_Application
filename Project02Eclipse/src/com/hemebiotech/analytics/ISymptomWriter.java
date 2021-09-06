@@ -6,9 +6,9 @@ import java.util.TreeMap;
  * <p> Methode vide permettant de récuperer la TreeMap {@link ObjAnalyser#listSymptomsCounted}<br>
  *     Retourne une liste TreeMap clé/valeur à la Methode getSymptomWrited pour ecrire le fichier "result.out" <br>
  * </p>
- * 
+ *
  * @see WriteSymptomDataToFile
- * 
+ *
  * @author xGuix
  * @version v1.0
  */

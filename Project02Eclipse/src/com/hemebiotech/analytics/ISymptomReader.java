@@ -8,9 +8,9 @@ import java.util.List;
  * </p><p>
  * La liste n'a pas besoin d'être ordonnee pour l'instant.
  * </p>
- * 
+ *
  * @see ReadSymptomDataFromFile
- * 
+ *
  * @author xGuix
  * @version v1.0
  */
@@ -22,4 +22,3 @@ public interface ISymptomReader {
 	 */
 	List<String> getSymptoms();
 }
- 

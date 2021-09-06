@@ -9,15 +9,15 @@ import java.util.List;
  * <b>Outil de lecture de fichier de fichier (texte.txt)</b>
  * <p>Simple brute force - Renvoi une liste brute sans traitement des occurence.<br>
  * Implemente l'interface {@link ISymptomReader}
- * 
+ *
  * @see ISymptomReader
- * 
+ *
  * @author xGuix
  * @version v1.0
  */
 public class ReadSymptomDataFromFile implements ISymptomReader
 {
-	
+
 	private String filepath;
 	/**
 	 * @param filepath  le chemin d'acces au fichier avec des strings (symptoms),
@@ -27,13 +27,14 @@ public class ReadSymptomDataFromFile implements ISymptomReader
 	{
 		this.filepath = filepath;
 	}
-	
+
 	/**
 	 * <b>Déclaration de la methode (getSymptoms) de l'interface ISymptomReader</b><br>
 	 * Liste des symptoms lu à partir du (filepath) inputFile "symptoms.txt"
-	 * 
+	 *
 	 * @return result le resultat dans une nouvelle ArrayList
 	 */
+	@Override
 	public List<String> getSymptoms()
 	{
 		// Instance ArrayList pour stocker la nouvelle liste
