@@ -10,7 +10,7 @@ import java.util.TreeMap;
  * Les doublons sont comptés et la liste est ordonne par ordre alphabetique.
  * </p>
  *
- * @see CountSymptomDataFromFile
+ * @see CountSymptomDataFromList
  *
  * @author xGuix
  * @version v1.0

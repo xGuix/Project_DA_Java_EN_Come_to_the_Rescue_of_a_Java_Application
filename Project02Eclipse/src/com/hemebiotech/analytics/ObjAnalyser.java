@@ -27,11 +27,11 @@ import java.util.TreeMap;
  * Déclare leurs methodes respective : symptomsReader(), symptomsCounter(), symptomsWriter().
  * <ul>
  * <li> symptomsReader {@link ReadSymptomDataFromFile} implemente l'interface {@link ISymptomReader}
- * <li> symptomsCounter {@link CountSymptomDataFromFile} implemente l'interface {@link ISymptomCounter}
+ * <li> symptomsCounter {@link CountSymptomDataFromList} implemente l'interface {@link ISymptomCounter}
  * <li> symptomsWriter {@link WriteSymptomDataToFile} implemente l'interface {@link ISymptomWriter}
  * </ul>
  * <p>
- * <b>Contient 3 methodes d'appels {Class outils} pour effectuer le traitement et l'analyse</b><br>
+ * <b>Contient 3 methodes d'appels {Class implementation} pour effectuer le traitement et l'analyse</b><br>
  * Déclare les methodes respective : getSymptomsList(), getCountedList(), getWritedList().
  * <ul>
  * <li> getSymptomsList() {@link ISymptomReader#getSymptoms()}
@@ -62,7 +62,7 @@ public class ObjAnalyser
 	 * <p>Avec les attributs de chacunes des 3 interfaces
 	 * <ul>
 	 * <li>(symptomsReader) utilise {@link ReadSymptomDataFromFile} via l'interface ISymptomReader
-	 * <li>(symptomsCounter) utilise {@link CountSymptomDataFromFile} via l'interfaceISymptomCounter
+	 * <li>(symptomsCounter) utilise {@link CountSymptomDataFromList} via l'interfaceISymptomCounter
 	 * <li>(symptomsWriter) utilise {@link WriteSymptomDataToFile} via l'interfaceISymptomWriter
 	 * </ul>
 	 * <p>
@@ -120,6 +120,7 @@ public class ObjAnalyser
 	public void getSymptomsList()
 	{
 		this.listSymptoms = symptomsReader.getSymptoms();
+		System.out.println("List of symptoms is extracted\n");
 	}
 	/**
 	 * <p>
@@ -132,6 +133,7 @@ public class ObjAnalyser
 	public void getCountedList() throws Exception
 	{
 		this.listSymptomsCounted = symptomsCounter.getSymptomsCounted(listSymptoms);
+		System.out.println("Symptoms are counted and sorted\n");
 	}
 	/**<p>
 	 * <b>getWritedList()</b><br>
@@ -143,5 +145,6 @@ public class ObjAnalyser
 	public void getWritedList() throws Exception
 	{
 		this.symptomsWriter.getSymptomsWrited(listSymptomsCounted);
+		System.out.println("Symptoms are writed\n");
 	}
 }

@@ -12,7 +12,7 @@ import java.util.TreeMap;
  * @author xGuix
  * @version v1.0
  */
-public class CountSymptomDataFromFile implements ISymptomCounter
+public class CountSymptomDataFromList implements ISymptomCounter
 {
 	/**
 	 * <b> Class CountSymptomDataFromFile</b>
@@ -46,6 +46,7 @@ public class CountSymptomDataFromFile implements ISymptomCounter
 					counter.put(symptom,counter.get(symptom)+1);
 					}
 				}
+		System.out.println("CountSymptomDataFromList Finished");
 		// retourne la liste triee et comptee
 		return counter;
 	}

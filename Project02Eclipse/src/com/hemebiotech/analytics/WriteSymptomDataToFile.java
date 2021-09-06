@@ -41,6 +41,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter
 				writer.write(String.format("Symptom / "+"%30s", symptom +" =[ "+ String.format("%02d",count) +" ] "));
 				writer.write(System.lineSeparator());
 		}
+		System.out.println("WriteSymptomDataToFile Finished");
 		// ferme le writer
 		writer.close();
 	}

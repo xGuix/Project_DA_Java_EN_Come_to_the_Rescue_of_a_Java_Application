@@ -1,1 +1,5 @@
-# Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application
+# Project AnalyticsCounter V1.0
+***
+Application Heme Biotech pour l'analyse des effets secondaires identifier par les utilisateurs de medicaments.
+
+##

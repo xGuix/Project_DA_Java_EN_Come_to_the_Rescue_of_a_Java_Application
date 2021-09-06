@@ -15,11 +15,8 @@ package com.hemebiotech.analytics;
  * <p>
  * 
  * @see ISymptomReader
- * Interface ISymptomReader
  * @see ISymptomCounter
- * Interface ISymptomCounter
  * @see ISymptomWriter
- * Interface ISymptomWriter
  *
  * @author xGuix
  * @version v1.0
@@ -31,9 +28,9 @@ public class AnalyticsCounter
 	 * <b>Déclaration du fichier d'entrée inputFile ("symptoms.txt") et de sortie outputFile ("result.out")</b>
 	 * <p>
 	 * Instance de l'objet {@link ObjAnalyser} nommée (MyAnalyser)<br>
-	 * Instance des 3 classes outils.
+	 * Instance des 3 implementations.
 	 * </p>
-	 * Appel les 3 methodes qui appellent les 3 outils :
+	 * Appel les 3 methodes qui appellent les 3 implementations :
 	 * <ul>
 	 * <li>	 .getSymptomsList() {@link ObjAnalyser#getSymptomsList()}
 	 * <li>	 .getCountedList() {@link ObjAnalyser#getCountedList()}
@@ -51,12 +48,14 @@ public class AnalyticsCounter
 		final String outputFile = "result.out";
 		// Instance de class Objet {ObjAnalyser} avec les valeurs de mes class (ReadSymptomDataFromFile , CountSymptomDataFromFile et WriteSymptomDataToFile)
 		ObjAnalyser MyAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
-		new CountSymptomDataFromFile(), new WriteSymptomDataToFile(outputFile));
+		new CountSymptomDataFromList(), new WriteSymptomDataToFile(outputFile));
 			// Appelle de methode pour obtenir la liste des symptoms du fichier "symptoms.txt"
 			MyAnalyser.getSymptomsList();
 		    // Appelle de methodes pour compter les symptoms
 		    MyAnalyser.getCountedList();
 		    // Appelle de methode pour ecrire le resultat dans le fichier "result.out"
 		    MyAnalyser.getWritedList();
+		    System.out.println("The new file : result.out is now add to your folder.");
+		    System.out.println("Thanks for using AnalyticsCounter v1.0");
 	}
 }
