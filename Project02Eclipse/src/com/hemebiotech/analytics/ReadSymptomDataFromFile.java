@@ -10,14 +10,8 @@ import java.util.List;
  * @author xGuix
  * @version v1.0
  */
-<<<<<<< HEAD
-public class ReadSymptomDataFromFile implements ISymptomReader {
-
-=======
 public class ReadSymptomDataFromFile implements ISymptomReader
 {
-	
->>>>>>> release
 	private String filepath;
 	/**
 	 * @param filepath a full or partial path to file with symptom strings in it,

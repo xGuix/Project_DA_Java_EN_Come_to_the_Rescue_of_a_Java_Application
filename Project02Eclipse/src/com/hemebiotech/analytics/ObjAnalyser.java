@@ -1,15 +1,5 @@
 package com.hemebiotech.analytics;
 
-<<<<<<< HEAD
-	abstract public class ObjAnalyser implements ISymptomReader {
-		
-		String symptoms;
-		Integer totalOfSymptoms;
-		
-		abstract void ISymptomReader();
-			
-}
-=======
 import java.util.List;
 import java.util.TreeMap;
 
@@ -111,4 +101,3 @@ public class ObjAnalyser
 		this.symptomsWriter.getSymptomsWrited(listSymptomsCounted);
 	}
 }
->>>>>>> release

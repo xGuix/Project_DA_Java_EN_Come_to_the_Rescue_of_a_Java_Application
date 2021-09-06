@@ -20,10 +20,6 @@ public interface ISymptomReader {
 	 * </p>
 	 * @return La liste brut de tous les symptoms du fichier source "symtptom.txt",<br> pas de traitement, doublons possibles.
 	 */
-<<<<<<< HEAD
-	List<String> GetSymptoms();
-=======
 	List<String> getSymptoms();
->>>>>>> release
 }
  
