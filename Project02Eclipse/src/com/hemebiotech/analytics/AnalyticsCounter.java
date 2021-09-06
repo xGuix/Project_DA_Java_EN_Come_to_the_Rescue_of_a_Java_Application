@@ -1,26 +1,23 @@
 package com.hemebiotech.analytics;
 
-
-/**<p>
- * <b>La class AnalyticsCounter qui appelle l'objet {ObjAnalyser}</b> {@link ObjAnalyser}
- * </p>
- * Les 3 classes utilisees par l'objet pour traiter les fichiers :<br>
+/**
+ * <b>La class AnalyticsCounter appelle l'objet {ObjAnalyser}</b> {@link ObjAnalyser}
+ * <p>
+ *  3 methodes de l'objet {@link ObjAnalyser} appellées pour traiter les fichiers :
  * <ul>
- * <li> METHODE DE LECTURE DE FICHIER // 
- * {@link ReadSymptomDataFromFile} implement ISymptomReader
- * <li> METHODE DE COMPTAGE DE LISTE // 
- * {@link CountSymptomDataFromFile} implement ISymptomCounter
- * <li> METHODE D'ECRITURE DE FICHIER // 
- * {@link WriteSymptomDataToFile} implement ISymptomWriter
- * </ul> 
+ * <li> METHODE DE LECTURE DE FICHIER //
+ * {@link ObjAnalyser#getSymptomsList()}
+ * <li> METHODE DE COMPTAGE DE LISTE //
+ * {@link ObjAnalyser#getCountedList()}
+ * <li> METHODE D'ECRITURE DE FICHIER //
+ * {@link ObjAnalyser#getWritedList()}
+ * </ul>
+ * <p>
  * 
  * @see ISymptomReader
- * Interface ISymptomReader de {@link ReadSymptomDataFromFile}
  * @see ISymptomCounter
- * Interface ISymptomCounter de {@link CountSymptomDataFromFile}
  * @see ISymptomWriter
- * Interface ISymptomWriter de {@link WriteSymptomDataToFile}
- * 
+ *
  * @author xGuix
  * @version v1.0
  */
@@ -28,37 +25,37 @@ package com.hemebiotech.analytics;
 public class AnalyticsCounter
 {
 	/**
+	 * <b>Déclaration du fichier d'entrée inputFile ("symptoms.txt") et de sortie outputFile ("result.out")</b>
 	 * <p>
-	 * Je declare les liens vers les fichiers d'entrées (inputFile) et de sorties (outputFile)
-	 * </p><p>
-	 * <b>Instance de l'objet {@link ObjAnalyser} nommée (MonAnalyser)</b>
+	 * Instance de l'objet {@link ObjAnalyser} nommée (MyAnalyser)<br>
+	 * Instance des 3 implementations.
 	 * </p>
-	 * Utilisation des 3 methodes de mon objet:
+	 * Appel les 3 methodes qui appellent les 3 implementations :
 	 * <ul>
-	 * <li>	 .getSymptomsList() {@link ObjAnalyser.getSymptomsList()}
-	 * <li>	 .getCountedList() {@link ObjAnalyser.getCountedList}
-	 * <li>	 .getWritedList() {@link ObjAnalyser.getWritedList}
+	 * <li>	 .getSymptomsList() {@link ObjAnalyser#getSymptomsList()}
+	 * <li>	 .getCountedList() {@link ObjAnalyser#getCountedList()}
+	 * <li>	 .getWritedList() {@link ObjAnalyser#getWritedList()}
 	 * </ul>
-	 * 
-	 * @param inputFile Fichier d'entrée (inputFile)
-	 * @param outputFile Fichier de sortie (outputFile)
-	 * @param args no Value
+	 *
+	 * @param args empty
 	 * @throws Exception Try / catch
 	 */
-	
+
 	public static void main(String args[]) throws Exception
 	{
 		// Déclare le nom des fichiers in et out
 		final String inputFile = "symptoms.txt";
 		final String outputFile = "result.out";
-		// Instance de class Objet {ObjAnalyser} avec les valeurs mes methodes
-		ObjAnalyser MonAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
-		new CountSymptomDataFromFile(), new WriteSymptomDataToFile(outputFile));
+		// Instance de class Objet {ObjAnalyser} avec les valeurs de mes class (ReadSymptomDataFromFile , CountSymptomDataFromFile et WriteSymptomDataToFile)
+		ObjAnalyser MyAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
+		new CountSymptomDataFromList(), new WriteSymptomDataToFile(outputFile));
 			// Appelle de methode pour obtenir la liste des symptoms du fichier "symptoms.txt"
-			MonAnalyser.getSymptomsList();
+			MyAnalyser.getSymptomsList();
 		    // Appelle de methodes pour compter les symptoms
-		    MonAnalyser.getCountedList();
+		    MyAnalyser.getCountedList();
 		    // Appelle de methode pour ecrire le resultat dans le fichier "result.out"
-		    MonAnalyser.getWritedList();
+		    MyAnalyser.getWritedList();
+		    System.out.println("The new file : result.out is now add to your folder.");
+		    System.out.println("Thanks for using AnalyticsCounter v1.0");
 	}
 }

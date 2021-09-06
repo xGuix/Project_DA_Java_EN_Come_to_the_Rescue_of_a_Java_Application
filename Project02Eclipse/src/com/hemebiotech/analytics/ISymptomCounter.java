@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.TreeMap;
 /**
  * <b> Interface ISymptomCounter</b>
- * <p> Permet de récuperer la liste des symptoms {@link ObjAnalyser.listSymptoms}<br>
- *     Retourne une liste TreeMap  clé/valeur  {@link ObjAnalyser.listSymptomsCounted} <br>
+ * <p> Permet de récuperer la liste des symptoms {@link ObjAnalyser#listSymptoms}<br>
+ *     Retourne une liste TreeMap  clé/valeur  {@link ObjAnalyser#listSymptomsCounted} <br>
  * </p><p>
  * Les doublons sont comptés et la liste est ordonne par ordre alphabetique.
  * </p>
- * 
- * @see CountSymptomDataFromFile
- * 
+ *
+ * @see CountSymptomDataFromList
+ *
  * @author xGuix
  * @version v1.0
  */
@@ -21,8 +21,8 @@ public interface ISymptomCounter {
 	 * <p>
 	 * @param listSymptoms<br>
 	 * Prend tous les symptoms extraits de la liste brute.
-	 * @return getSymptomsCounted<br> 
-	 * Trie et compte de la listSymptoms et retourne : clé = symptoms/Valeur = nombre de fois (symptom). 
+	 * @return getSymptomsCounted<br>
+	 * Trie et compte de la listSymptoms et retourne : clé = symptoms/Valeur = nombre de fois (symptom).
 	 * @throws Exception Try / catch
 	 * </p>
 	 */
