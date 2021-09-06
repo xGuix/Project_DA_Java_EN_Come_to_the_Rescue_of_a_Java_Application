@@ -55,7 +55,7 @@ public class AnalyticsCounter
 		    MyAnalyser.getCountedList();
 		    // Appelle de methode pour ecrire le resultat dans le fichier "result.out"
 		    MyAnalyser.getWritedList();
-		    System.out.println("The new file : result.out is now add to your folder.");
+		    System.out.println("The new file : result.out is now add to your folder!");
 		    System.out.println("Thanks for using AnalyticsCounter v1.0");
 	}
 }

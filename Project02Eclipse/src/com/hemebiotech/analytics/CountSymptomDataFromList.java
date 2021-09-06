@@ -46,7 +46,7 @@ public class CountSymptomDataFromList implements ISymptomCounter
 					counter.put(symptom,counter.get(symptom)+1);
 					}
 				}
-		System.out.println("CountSymptomDataFromList Finished");
+		System.out.println("CountSymptomDataFromList Finished...");
 		// retourne la liste triee et comptee
 		return counter;
 	}
