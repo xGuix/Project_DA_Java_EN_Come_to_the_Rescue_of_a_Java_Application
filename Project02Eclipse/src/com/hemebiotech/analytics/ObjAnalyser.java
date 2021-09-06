@@ -120,7 +120,7 @@ public class ObjAnalyser
 	public void getSymptomsList()
 	{
 		this.listSymptoms = symptomsReader.getSymptoms();
-		System.out.println("List of symptoms is extracted\n");
+		System.out.println("List of symptoms is extracted...\n");
 	}
 	/**
 	 * <p>
@@ -133,7 +133,7 @@ public class ObjAnalyser
 	public void getCountedList() throws Exception
 	{
 		this.listSymptomsCounted = symptomsCounter.getSymptomsCounted(listSymptoms);
-		System.out.println("Symptoms are counted and sorted\n");
+		System.out.println("Symptoms are counted and sorted...\n");
 	}
 	/**<p>
 	 * <b>getWritedList()</b><br>
@@ -145,6 +145,6 @@ public class ObjAnalyser
 	public void getWritedList() throws Exception
 	{
 		this.symptomsWriter.getSymptomsWrited(listSymptomsCounted);
-		System.out.println("Symptoms are writed\n");
+		System.out.println("Symptoms are writed...\n");
 	}
 }
