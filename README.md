@@ -25,9 +25,9 @@ Instance des Class implementantes : Type de source
 
 ### Utilisation des 3 intefaces
 ***
-- Comment lire un fichier ? ISymptomReader (List de String)
-- Comment compter et trier? ISymptomCounter (TreeMap Key/Value)
-- Comment ecrire un fichier ? ISymptomWriter (void)
+- Comment lire un fichier ? <br>ISymptomReader (List de String)
+- Comment compter et trier? <br>ISymptomCounter (TreeMap Key/Value)
+- Comment ecrire un fichier ? <br>ISymptomWriter (void)
 
 #### Evolution possible
 ***
