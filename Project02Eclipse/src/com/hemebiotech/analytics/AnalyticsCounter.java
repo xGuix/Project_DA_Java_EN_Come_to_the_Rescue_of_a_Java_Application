@@ -46,7 +46,8 @@ public class AnalyticsCounter
 		// Déclare le nom des fichiers in et out
 		final String inputFile = "symptoms.txt";
 		final String outputFile = "result.out";
-		// Instance de class Objet {ObjAnalyser} avec les valeurs de mes class (ReadSymptomDataFromFile , CountSymptomDataFromFile et WriteSymptomDataToFile)
+		// Instance de class Objet {ObjAnalyser} avec les valeurs de mes class 
+		// (ReadSymptomDataFromFile,CountSymptomDataFromFile et WriteSymptomDataToFile)
 		ObjAnalyser MyAnalyser = new ObjAnalyser(new ReadSymptomDataFromFile(inputFile),
 		new CountSymptomDataFromList(), new WriteSymptomDataToFile(outputFile));
 			// Appelle de methode pour obtenir la liste des symptoms du fichier "symptoms.txt"
